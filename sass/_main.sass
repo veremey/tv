@@ -1,0 +1,275 @@
+$n: transparent
+
+.footer_bottom_propose
+	display: none
+
+.menu
+	+clr
+	+r(1000)
+		ul
+			&:after
+				content: none
+		> li
+			&:first-child
+				border-left: 1px solid $n
+				&:before
+					display: none
+			&:last-child
+				display: none
+			a
+				padding: 0 30px
+		.submenu li a
+			padding: 8px 25px 10px 17px
+		li:hover .submenu
+			z-index: 10
+		li a
+			padding: 0 15px
+	+r(925)
+		position: relative
+		left: 0
+
+.side__menu
+	display: none
+
+#header
+	+g(#fff, #d5e6f9)
+
+
+.slider_large li
+	overflow: hidden
+.img__wrap
+	position: absolute
+	top: 0
+	left: 50%
+	margin-left: -960px
+	width: 1920px
+	img
+		width: auto
+		height: 465px
++r(925)
+	.top_social
+		display: none
+	.top__logo_768
+		float: left
+		margin: 11px 0 0 71px
+		+s(logo_768)
+	.burger__menu
+		position: absolute
+		top: 11px
+		left: 7px
+		z-index: 151
+		+s(burger__menu)
+	.side__menu
+		display: none
+		position: absolute
+		top: 46px
+		left: 0
+		width: 246px
+		height: 100%
+		min-height: 760px
+		background-color: #1E3450
+		font-size: 0
+		font-family: 'ubuntu', sans-serif
+		z-index: 52
+		a
+			display: block
+			font-size: 16px
+			line-height: 36px
+			text-decoration: none
+			border-bottom: 1px solid #27415E
+		.side__submenu
+			display: none
+		.side__menu_link
+			font-weight: 400
+			color: #7bb4d8
+			padding-left: 33px
+		li
+			&:hover
+				.side__menu_link
+					font-weight: 500
+					color: #B8D4E6
+		.side__submenu_link
+			font-weight: 300
+			color: #B8D4E6
+			padding-left: 68px
+		#top_search,
+		.side__menu_search
+			display: none
+	#top_search
+		top: 9px
+		left: 242px
+		input[type="text"]
+			display: block
+			width: 169px
+			height: 9px
+		input[type="submit"]
+			top: -4px
+	.account
+		position: absolute
+		top: 7px
+		right: 0
+	.account_icon_2
+		width: 31px
+		height: 31px
+	#top_line .fixed
+		height: 46px
+
+	#logo
+		display: none
+	// .menu
+	// 	ul
+	// 		&:after
+	// 			content: none
+	// 	> li
+	// 		&:first-child
+	// 			border-left: 1px solid $n
+	// 			&:before
+	// 				display: none
+	// 		&:last-child
+	// 			display: none
+	// 		a
+	// 			padding: 0 30px
+	// 	.submenu li a
+	// 		padding: 8px 25px 10px 17px
+	// .menu li:hover .submenu
+	// 	z-index: 10
+
+
+
+
+
+
++r(700)
+	#top_search
+		display: none
+	.side__menu
+		.side__menu_search
+			display: block
+			height: 36px
+			border-bottom: 1px solid #27415E
+		#top_search
+			top: 4px
+			left: 12px
+			input[type="text"]
+				background-color: #14263D
+		#top_search,
+		.side__menu_search
+			display: block
+
++r(1060)
+	#footer .nav
+		width: 120px
+		margin-right: 10px
++r(900)
+	#container
+		padding-bottom: 265px
+	#footer_bottom .nav
+		display: none
+
+	#footer_bottom
+		padding: 0
+		height: 125px
+	#footer_r
+		padding-top: 30px
+
+	.footer_bottom_propose
+		display: block
+		width: 220px
+		margin-left: 20px
+		float: left
+		li
+			width: 100px
+			list-style: none
+			display: inline-block
+		a
+			font: 12px Arial, sans-serif
+	.footer_bottom_propos_white
+		display: inline-block
+		color: #FFF
+		font-weight: bold
+		margin: 20px 0
+	.footer_bottom_propos_link
+		color: #7BB4D8
+		text-decoration: none
+		line-height: 20px
+		&:hover
+			text-decoration: underline
+	.footer__butter
+		display: none
+		+r(480)
+			display: inline-block
+			+s(burger__menu)
+
+
+
+			// #################################
+			// #################################
+			// #################################
+
+
+
+			//CATWLOG
+
+
+
++r(1130)
+	// .catalog
+	// 	width: 704px
+	// .items .item-c:nth-child(odd)
+	// 	margin-left: 0px
+	// .items .item-c:nth-child(even)
+	// 	margin-left: 26px
+	.items
+		text-align: justify
+		position: relative
+		+clr
+		.item-c
+			width: 31%
+			display: inline-block
+			// padding-right: 15px
+			margin: 0 0 26px
+			vertical-align: top
+			+box
+			.pic
+				width: 100%
+				height: auto
+				a
+					display: block
+					position: relative
+					height: 0
+					border: none
+					padding-top: 100%
+					img
+						+coverdiv
+		.item-c__center
+			margin: 0 3% 0
+			+r(850)
+				margin: 0 2% 0
++r(600)
+	.categories-c,
+	.sort-by
+		display: none
+	.content-c
+		margin-left: 0
+	.items
+		.item-c
+			width: 48%
+			&:nth-child(odd)
+				margin-left: 0px
+			&:nth-child(even)
+				margin-left: 3%
+			.pic
+				width: 100%
+				img
+					width: 100%
+		.item-c__center
+			margin: 0
+
+
++r(360)
+	.items
+		.item-c
+			width: 100%
+			margin: 0 0 26px
+			&:nth-child(even)
+				margin-left: 0
