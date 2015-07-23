@@ -16,11 +16,24 @@ $(function(){
 
 	// film_poster
 		$('.film_about_details').on('click', function() {
-			$('.film_about').slideToggle();
+			$('.film_info').slideToggle();
 			$(this).toggleClass('is_active');
+			$('.film_prize').toggleClass('film_prize_width');
+			$('.film_descr').toggleClass('film_descr_width');
+			return false;
 		});
 
+		if ($(document).width() <= 480) {
+			$('.film_rating .stars .descr').addClass('stars__show');
+			$('.submenu__right_coner').removeClass('submenu__right_coner');
+		};
 
+		$('.stars__show').on('click', function () {
+				$('.film_rating .stars__rank').slideToggle();
+			});
+		$('.radio').on('click', function () {
+				$('.film_rating .stars__rank').slideUp();
+			});
 
 //480
 //хлебные крошки  ХЕДЕР
@@ -34,6 +47,60 @@ $(function(){
 		$(this).parents('#container').find('.side__bread, .side__menu').slideUp();
 		$(this).fadeOut();
 	});
+
+	// $('.category_slider_inner li.double_slide > a, .category_slider_item.double_slide > a,.category_slider_inner li.double_slide .thumb, .category_slider_item.double_slide .thumb').on('resize', function() {
+	// 	$(this).css({"width" : "($(document).width()/2) + 'px'"});
+	// });
+
+		// $(window).on('resize', function() { $('.category_slider_inner li.double_slide > a, .category_slider_item.double_slide > a,.category_slider_inner li.double_slide .thumb, .category_slider_item.double_slide .thumb').css({"width" : $(document).width()/2 + 'px'});
+		// });
+
+
+	// enter
+
+
+		// if ($(document).width() <= 600) {
+		// 	$('#container').addClass('padding_0');
+		// };
+	//
+	//baxazar
+	//
+
+	function select() {
+		$(".js-select").each(function(){
+			var select_list = $(this).parent().find(".js-select-list");
+			var text = select_list.find("li").first().text();
+			$(this).find(".js-select-text").text(text);
+			$(this).click(function(event){
+				if ($(this).hasClass("is-active")) {
+				    $(this).removeClass("is-active");
+				    select_list.slideUp("fast");
+				}
+				else {
+				    $(".js-select").removeClass("is-active");
+				    $(".js-select-list").hide();
+				    select_list.slideDown("fast");
+				    $(this).addClass("is-active");
+				}
+				event.stopPropagation();
+			});
+			select_list.find("li").click(function(event) {
+				var id = $(this).attr("data-id");
+				var text = $(this).text();
+				$(this).parent().parent().find(".js-select-text").text(text);
+				$(this).parent().parent().find(".js-select-input").val(id);
+				$(this).parent().hide();
+				$(this).parents(".js-select").removeClass("is-active");
+				event.stopPropagation();
+			});
+		});
+	}
+	select();
+
+	$('.js-select').click(function(event){
+	    event.stopPropagation();
+	});
+
 
 	//
 
@@ -210,6 +277,9 @@ $(function(){
 			dots: false,
 			responsive: {
 				0: {
+					items: 2,
+				},
+				768: {
 					items: 4,
 				},
 				1280: {
@@ -350,3 +420,4 @@ function center_carousel(carousel) {
 	}
 
 }
+

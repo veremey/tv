@@ -498,7 +498,7 @@ body {
 	position: relative;
 }
 
-.menu li:hover a, .menu li.active a {
+.menu li:hover, .menu li.active{
 	background-color: #cae0f3;
 	background: linear-gradient(to right bottom, #7db5d9, #b7d4ed);
 }
@@ -3477,6 +3477,7 @@ div.noUi-handle:hover {
 	display: block;
 	float: left;
 	width: 307px;
+	margin: 0 40px 40px 0;
 }
 
 .film_l .thumb {
@@ -3745,7 +3746,7 @@ div.noUi-handle:hover {
 .film_rating .stars {
 	display: block;
 	float: left;
-	width: 38%;
+	width: 37%;
 	height: 44px;
 	padding-top: 14px;
 	text-align: center;

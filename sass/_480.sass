@@ -22,12 +22,13 @@
 
 
 
-	// #header
-	// 	background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgi…gd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgZmlsbD0idXJsKCNncmFkKSIgLz48L3N2Zz4g')
-	// 	background-size: 100%
-	// 	background-image: -moz-linear-gradient(#ffffff 0%, #d5e6f9 50%, #ffffff 51%, #d5e6f9 100%)
-	// 	background-image: -webkit-linear-gradient(#ffffff 0%, #d5e6f9 50%, #ffffff 51%, #d5e6f9 100%)
-	// 	background-image: linear-gradient(#ffffff 0%, #d5e6f9 50%, #ffffff 51%, #d5e6f9 100%)
+	#header
+		+r(500)
+			background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgi…gd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgZmlsbD0idXJsKCNncmFkKSIgLz48L3N2Zz4g')
+			background-size: 100%
+			background-image: -moz-linear-gradient(#ffffff 0%, #d5e6f9 50%, #ffffff 51%, #d5e6f9 100%)
+			background-image: -webkit-linear-gradient(#ffffff 0%, #d5e6f9 50%, #ffffff 51%, #d5e6f9 100%)
+			background-image: linear-gradient(#ffffff 0%, #d5e6f9 50%, #ffffff 51%, #d5e6f9 100%)
 
 
 	.account_exit
@@ -51,7 +52,7 @@
 	.side__bread
 		display: none
 		position: absolute
-		top: 119px
+		top: 134px
 		left: 0
 		width: 413px
 		background-color: #1E3450
@@ -156,7 +157,17 @@
 	// 	input[type="submit"]
 	// 		width: 10%
 
-
+	.extended_search
+		background-color: #FFF
+		padding-top: 0
+		+g(#FFF 55%, #e8f1fc 120%)
+	.sort_btn
+		margin-top: 10px
+		margin-bottom: 0
+		span
+			&:after,
+			&:before
+				display: none
 	.footer_bottom_propose
 		// display: none
 		margin-left: 10px
@@ -182,63 +193,7 @@
 			width: 61%
 		input[type="submit"]
 			width: 31%
-	// .categories-c,
-	// .sort-by
-	// 	display: none
-	// .content-c
-	// 	margin-left: 0
-	// .items .item-c
-	// 	width: 48%
-	// 	&:nth-child(odd)
-	// 		margin-left: 0px
-	// 	&:nth-child(even)
-	// 		margin-left: 3%
-	// 	.pic
-	// 		width: 100%
-	// 		img
-	// 			width: 100%
 
-
-	// Film__poster
-	//карточка фильма
-
-	.film_rating
-		width: 450px
-		.stars
-			height: 59px
-			width: 145px
-			&:after
-				+s(rate_triagle_480)
-				right: -20px
-				top: -2px
-			.descr
-				width: 100%
-				text-align: center
-				font-size: 18px
-				margin-bottom: 5px
-		.result
-			height: 57px
-			line-height: 57px
-			margin-right: 12px
-	.voice
-		height: 55px
-		&_1
-			display: block
-			font-size: 18px
-			margin-left: 22px
-		&_2
-			display: block
-			font-size: 16px
-			width: 110px
-			margin: 5px 0 0
-	.rank
-		width: 105px
-		height: 42px
-		padding-top: 18px
-		span
-			padding-left: 63px
-	.film_nav
-		width: 450px
 	.slider_tabs span, .slider_tabs a
 		margin: 0 15px
 
@@ -252,8 +207,8 @@
 
 
 	.comments
-		padding: 20px 0
-		width: 450px
+		padding: 20px 10px
+		width: 95%
 		margin: 0 auto
 	.topic
 		margin-bottom: 15px
@@ -274,153 +229,80 @@
 	.reply_body .author
 		margin-left: 20px
 
-	//FILM__POSTERS
-
-	#flexi_soundtracks
-		padding: 30px 0 60px
-	.soundtracks
-		width: 440px
-	.soundtracks .cover
-		display: none
-	.soundtracks .cover + .playlist
-		margin: 0 auto
-	.soundtracks .playlist, .soundtracks .playlist_inner
-		width: 440px
-	.track .track_info
-		width: 380px
-	.track .track_number
-		width: 50px
-
-	//TRAILERS
-
-	#flexi_trailers .flexi_slider_inner
-		width: 410px
-		margin: 0 auto
-	.trailer
-		width: 410px
-	.trailer_video
-		width: 100%
-	.trailer .trailer_thumb
-		width: 100%
-	#flexi_trailers .small_arrow_l
-		top: 33%
-		margin-left: -225px
-		background-color: $n
-		span
-			background: url(../images/arrows_white.png) 0 0 no-repeat
-	#flexi_trailers .small_arrow_r
-		top: 33%
-		margin-right: -235px
-		background-color: $n
-		span
-			background: url(../images/arrows_white.png) -16px 0 no-repeat
-	.trailer_play
-		display: block
-	#flexi_trailers .flexi_slider_inner, #flexi_trailers ul, #flexi_trailers li
-		height: auto
-	.trailer .trailer_info_inner
-		margin: 15px 0 0 0
-		padding: 0
-
-
 	//ACTOR
 
-	.actor_l
-		width: 160px
-	.actor_l .thumb
-		width: 160px
-		img
-			width: 160px
-	.actor_rating
-		.up
-			width: 63px
-			padding: 0 0 0 15px
-			font-size: 14px
-			line-height: 44px
-			span
-				+s(like-icon_480)
-				margin: 9px 10px 0
-			&:hover
-				width: 62px
-				padding: 0 0 0 15px
-				font-size: 14px
-				line-height: 44px
-				span
-					+scale(1.2)
-		.down
-			width: 63px
-			padding: 0 15px 0 0
-			font-size: 14px
-			line-height: 44px
-			span
-				+s(unlike-icon_480)
-				margin: 13px 10px 0
-			&:hover
-				width: 62px
-				padding: 0 15px 0 0
-				font-size: 14px
-				line-height: 44px
-				span
-					+scale(1.2)
-	.actor_info
-		margin-left: 175px
-
+	// .actor_l
+	// 	width: 160px
+	// .actor_l .thumb
+	// 	width: 160px
+	// 	img
+	// 		width: 160px
+	// .actor_rating
+	// 	.up
+	// 		width: 63px
+	// 		padding: 0 0 0 15px
+	// 		font-size: 14px
+	// 		line-height: 44px
+	// 		span
+	// 			+s(like-icon_480)
+	// 			margin: 9px 10px 0
+	// 		&:hover
+	// 			width: 62px
+	// 			padding: 0 0 0 15px
+	// 			font-size: 14px
+	// 			line-height: 44px
+	// 			span
+	// 				+scale(1.2)
+	// 	.down
+	// 		width: 63px
+	// 		padding: 0 15px 0 0
+	// 		font-size: 14px
+	// 		line-height: 44px
+	// 		span
+	// 			+s(unlike-icon_480)
+	// 			margin: 13px 10px 0
+	// 		&:hover
+	// 			width: 62px
+	// 			padding: 0 15px 0 0
+	// 			font-size: 14px
+	// 			line-height: 44px
+	// 			span
+	// 				+scale(1.2)
+	// .actor_info
+	// 	margin-left: 175px
+	// .prize_title
+	// 	font-size: 18px
+	// 	font-weight: 400
+	// .more_prize
+	// 	font-size: 16px
 
 	// VHOD
 
 
-	.user
-		display: none
-	.popup
-		left: 17%
-	.enter480,
-	.registration_480
-		position: relative
-		display: block
-		left: 0
-		top: 0
-		padding: 40px 0
-		width: 100%
-		z-index: 34
-		margin-bottom: 220px
-		.subtitle
-			width: 480px
-			margin: 0 0 25px
-		input[type="text"],
-		input[type="password"]
-			width: 350px
-			margin: 0 auto 18px
-		.error span
-			left: 72%
-		input[type="submit"]
-			width: 395px
-			margin: 0 auto 18px
-	#site
-		.padding_0
-			padding: 0
-		.enter480:after,
-		.registration_480:after
-			content: none
+	// .user
+	// 	display: none  // profil
+	// .popup
+	// 	left: 17%
 
 
 	//PROFILe
 
-	.entrance_body
-		margin-bottom: 20px
-	.entrance_footer:before
-		display: none
-	.entrance_footer .tab_check
-		width: 40%
-		margin-top: 10px
-	.profile_tabs div
-		width: 49%
-		border: 1px solid #cedbec
-		border-top: none
-		border-right: none
-		&:nth-child(odd)
-			border-left: none
-	.profile_tabs div:before
-		content: none
+	// .entrance_body
+	// 	margin-bottom: 20px
+	// .entrance_footer:before
+	// 	display: none
+	// .entrance_footer .tab_check
+	// 	width: 40%
+	// 	margin-top: 10px
+	// .profile_tabs div
+	// 	width: 49%
+	// 	border: 1px solid #cedbec
+	// 	border-top: none
+	// 	border-right: none
+	// 	&:nth-child(odd)
+	// 		border-left: none
+	// .profile_tabs div:before
+	// 	content: none
 
 	.category_tabs span
 		margin: 0 6px
@@ -430,43 +312,46 @@
 
 
 +r(478)
-	.menu
-		display: none
+	// .menu
+	// 	display: none
 	.footer__butter
 		display: block
 		float: left
 		margin: 35px 0 0 9px
-	.footer_bottom_propose
-		display: none
-		position: absolute
-		left: -16px
-		bottom: 126px
-		width: 235px
-		overflow: hidden
-		padding: 5px 0
-		background-color: #0B1A2C
-		li
-			width: 100%
-			padding: 5px 0 5px 15px
-			background-color: #0B1A2C
-			&:hover
-				background-color: #2A394A
-				a
-					text-decoration: underline
-		a
-			color: #7BB4D8
-			text-decoration: none
-			line-height: 20px
-			font-size: 15px
+	// .footer_bottom_propose
+	// 	display: none
+	// 	position: absolute
+	// 	left: -16px
+	// 	bottom: 126px
+	// 	width: 235px
+	// 	overflow: hidden
+	// 	padding: 5px 0
+	// 	background-color: #0B1A2C
+	// 	li
+	// 		width: 100%
+	// 		padding: 5px 0 5px 15px
+	// 		background-color: #0B1A2C
+	// 		&:hover
+	// 			background-color: #2A394A
+	// 			a
+	// 				text-decoration: underline
+	// 	a
+	// 		color: #7BB4D8
+	// 		text-decoration: none
+	// 		line-height: 20px
+	// 		font-size: 15px
 
-	.footer_bottom_propos_white
-		display: block
-		margin: 0
+	// .footer_bottom_propos_white
+	// 	display: block
+	// 	margin: 0
 
 +r(364)
 	.slider_nav
 		.top15_427
 			top: 15px
+
+
+
 
 +r(427)
 	.slider_nav
@@ -475,51 +360,50 @@
 			// .top15_427
 			// 	top: 15px
 
-	.category_slider_inner li.double_slide > a, .category_slider_item.double_slide > a
-		width: 400px
+	.category_slider_inner li.double_slide > a, .category_slider_item.double_slide > a,
 	.category_slider_inner li.double_slide .thumb, .category_slider_item.double_slide .thumb
-		width: 400px
+		width: 90vw
 	.category_slider_inner li.double_slide, .category_slider_item.double_slide
-		width: 427px
+		width: 100vw
 
 	.category_slider .slider_nav
 		padding: 0
 
-+r(390)
-	.category_slider_inner li.double_slide > a, .category_slider_item.double_slide > a
-		width: 350px
-	.category_slider_inner li.double_slide .thumb, .category_slider_item.double_slide .thumb
-		width: 350px
-	.category_slider_inner li.double_slide, .category_slider_item.double_slide
-		width: 390px
+// +r(390)
+// 	.category_slider_inner li.double_slide > a, .category_slider_item.double_slide > a
+// 		width: 350px
+// 	.category_slider_inner li.double_slide .thumb, .category_slider_item.double_slide .thumb
+// 		width: 350px
+// 	.category_slider_inner li.double_slide, .category_slider_item.double_slide
+// 		width: 390px
 
-	.category_slider .slider_nav
-		padding: 0
+// 	.category_slider .slider_nav
+// 		padding: 0
 
-+r(350)
-	.category_slider_inner li.double_slide > a, .category_slider_item.double_slide > a
-		width: 320px
-	.category_slider_inner li.double_slide .thumb, .category_slider_item.double_slide .thumb
-		width: 320px
-	.category_slider_inner li.double_slide, .category_slider_item.double_slide
-		width: 350px
+// +r(350)
+// 	.category_slider_inner li.double_slide > a, .category_slider_item.double_slide > a
+// 		width: 320px
+// 	.category_slider_inner li.double_slide .thumb, .category_slider_item.double_slide .thumb
+// 		width: 320px
+// 	.category_slider_inner li.double_slide, .category_slider_item.double_slide
+// 		width: 350px
 
-	.category_slider .slider_nav
-		padding: 0
-+r(320)
-	.category_slider_inner li.double_slide > a, .category_slider_item.double_slide > a
-		width: 290px
-	.category_slider_inner li.double_slide .thumb, .category_slider_item.double_slide .thumb
-		width: 290px
-	.category_slider_inner li.double_slide, .category_slider_item.double_slide
-		width: 320px // регулирует простр между каптинками
+// 	.category_slider .slider_nav
+// 		padding: 0
+// +r(320)
+// 	.category_slider_inner li.double_slide > a, .category_slider_item.double_slide > a
+// 		width: 290px
+// 	.category_slider_inner li.double_slide .thumb, .category_slider_item.double_slide .thumb
+// 		width: 290px
+// 	.category_slider_inner li.double_slide, .category_slider_item.double_slide
+// 		width: 320px // регулирует простр между каптинками
 
 
-	.category_slider .slider_nav
-		padding: 0
+// 	.category_slider .slider_nav
+// 		padding: 0
 
-	.category_slider_inner li.double_slide .thumb img, .category_slider_item.double_slide .thumb img
-		max-width: 290px
+// 	.category_slider_inner li.double_slide .thumb img, .category_slider_item.double_slide .thumb img
+// 		max-width: 290px
 
 
 +r(615)
@@ -532,11 +416,9 @@
 		form
 			margin-top: 10px
 			width: 100%
-		input[type="text"]
-			width: 75%
-			// width: 375px
-		input[type="submit"]
-			width: 10%
+		// input[type="text"]
+		// 	width: 75%
+		// 	// width: 375px
 +r(330)
 	.subs
 		span

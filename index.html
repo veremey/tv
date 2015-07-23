@@ -3,19 +3,21 @@
 <head>
 	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
 	<!-- + -->
-	<meta name="viewport" content="width=device-width", user-scalable='no'/>
+	<meta name="viewport" content="width=device-width", initial-scale=1,user-scalable='no'/>
 	 <!-- + -->
 	<title>Home page</title>
 	<link href='http://fonts.googleapis.com/css?family=Ubuntu:400,300,300italic,400italic,500italic,500,700,700italic&amp;subset=latin,cyrillic-ext' rel='stylesheet' type='text/css' />
 	<link href="css/style.css" type="text/css" rel="stylesheet" />
 	<!-- + -->
 	<link href="css/baxazar.css" type="text/css" rel="stylesheet" />
+
 	<!-- + -->
 	<link href="scripts/owl.carousel.css" type="text/css" rel="stylesheet" />
 	<script type="text/javascript" src="scripts/jquery-1.11.1.min.js"></script>
 	<script type="text/javascript" src="scripts/jquery.jcarousel.min.js"></script>
 	<script type="text/javascript" src="scripts/jquery.nouislider.all.min.js"></script>
 	<script type="text/javascript" src="scripts/owl.carousel.min.js"></script>
+	<script type="text/javascript" src="scripts/jquery-ui-1.10.3.custom.js"></script>
 	<script type="text/javascript" src="scripts/scripts.js"></script>
 </head>
 <body>
@@ -153,7 +155,7 @@
 
 					<div class="menu">
 						<ul>
-							<li class="active"><a href="/">Фильмы</a>
+							<li class="active menu__pad_1"><a href="/"><i class="icon_kino"></i>Кино</a>
 								<ul class="submenu">
 									<li><a href="/">Футбол</a></li>
 									<li><a href="/">Баскетбол</a></li>
@@ -162,11 +164,10 @@
 									<li><a href="/">Программы</a></li>
 								</ul>
 							</li>
-							<li><a href="/">Сериалы</a></li>
-							<li><a href="/">Мультфильмы</a></li>
-							<li><a href="/">Телепередачи</a></li>
-							<li ><a href="/">Спорт</a>
-								<ul class="submenu">
+							<li class="menu__pad_2"><a href="/"><i class="icon_serial"></i>Сериалы</a></li>
+							<li class="menu__pad_3"><a href="/"><i class="icon_tele"></i>Телешоу</a></li>
+							<li class="menu__pad_4"><a href="/"><i class="icon_sport"></i>Спорт</a>
+								<ul class="submenu submenu__right_coner">
 									<li><a href="/">Футбол</a></li>
 									<li><a href="/">Баскетбол</a></li>
 									<li><a href="/">Хокей</a></li>
@@ -174,7 +175,9 @@
 									<li><a href="/">Программы</a></li>
 								</ul>
 							</li>
-							<li class='show480'><a href="#" class="js_gime__more">Еще</a></li><!--  +эта строка -->
+							<li class="menu__pad_5"><a href="/"><i class=" icon_mult"></i>Мультфильмы</a></li>
+
+							<li class='show480 menu__pad_6'><a href="#" class="js_gime__more">Еще</a></li><!--  +эта строка -->
 							<li class="hide768"><a href="/">Рейтинг</a></li>
 						</ul>
 					</div>
@@ -387,91 +390,152 @@
 
 			<div class="extended_search">
 
-					<div class="fixed">
+				<div class="fixed">
+					<div class="hide480"> <!-- + -->
+						<div class="tabs">
 
-					<div class="tabs">
+							<span class="tab active">
+								<img src="images/icon_1.png" alt="" />
+								Фильм
+							</span>
+							<span class="tab">
+								<img src="images/icon_2.png" alt="" />
+								Сериал
+							</span>
+							<span class="tab">
+								<img src="images/icon_3.png" alt="" />
+								Телешоу
+							</span>
+							<span class="tab">
+								<img src="images/icon_4.png" alt="" />
+								Мультфильм
+							</span>
+							<span class="tab">
+								<img src="images/icon_5.png" alt="" />
+								Спорт
+							</span>
+							<div class="clear"></div> <!-- +эта строка -->
+							<div class="tab_check tab_check_first">
+								<input type="checkbox" name="newsletter_1" id="newsletter_1" value="1" />
+								<label for="newsletter_1">Онлайн просмотр</label>
+							</div>
+							<div class="tab_check">
+								<input type="checkbox" name="newsletter_2" id="newsletter_2" value="2" />
+								<label for="newsletter_2">Бесплатные</label>
+							</div>
 
-						<span class="tab active">
-							<img src="images/icon_1.png" alt="" />
-							Фильм
-						</span>
-						<span class="tab">
-							<img src="images/icon_2.png" alt="" />
-							Сериал
-						</span>
-						<span class="tab">
-							<img src="images/icon_3.png" alt="" />
-							Телешоу
-						</span>
-						<span class="tab">
-							<img src="images/icon_4.png" alt="" />
-							Мультфильм
-						</span>
-						<span class="tab">
-							<img src="images/icon_5.png" alt="" />
-							Спорт
-						</span>
-						<div class="clear"></div> <!-- +эта строка -->
-						<div class="tab_check tab_check_first">
-							<input type="checkbox" name="newsletter_1" id="newsletter_1" value="1" />
-							<label for="newsletter_1">Онлайн просмотр</label>
 						</div>
-						<div class="tab_check">
-							<input type="checkbox" name="newsletter_2" id="newsletter_2" value="2" />
-							<label for="newsletter_2">Бесплатные</label>
+
+						<div class="year">
+							<span>Год выпуска</span>
+							<div class="ruler"></div>
+							<input type="hidden" name="year_start" value="" />
+							<input type="hidden" name="year_end" value="" />
 						</div>
 
-					</div>
+						<div class="sort">
 
-					<div class="year">
-						<span>Год выпуска</span>
-						<div class="ruler"></div>
-						<input type="hidden" name="year_start" value="" />
-						<input type="hidden" name="year_end" value="" />
-					</div>
+							<div class="sort_item">
+								<div class="sort_title">Жанр:</div>
+								<div class="sort_tags">
+									<span>драма</span>
+									<span>комедия</span>
+									<span class="active">мелодрама</span>
+									<span>триллер</span>
+									<span>боевик</span>
+									<span>криминал</span>
+									<span>ужасы</span>
+									<span>приключения</span>
+									<span class="active">семейный</span>
+									<span>фэнтези</span>
+									<span>фантастика</span>
+									<div class="more">ещё &#8250;</div>
+								</div>
+							</div>
 
-					<div class="sort">
+							<div class="sort_item">
+								<div class="sort_title">Страна:</div>
+								<div class="sort_tags">
+									<span>США</span>
+									<span>Россия</span>
+									<span>СССР</span>
+									<span>Франция</span>
+									<span>Великобритания</span>
+									<span>Беларусь</span>
+									<span>Германия</span>
+									<span>Гонконг</span>
+									<span>Индия</span>
+									<span>Испания</span>
+									<span>Италия</span>
+									<span>Казахстан</span>
+									<div class="more">ещё &#8250;</div>
+								</div>
+							</div>
 
-						<div class="sort_item">
-							<div class="sort_title">Жанр:</div>
-							<div class="sort_tags">
-								<span>драма</span>
-								<span>комедия</span>
-								<span class="active">мелодрама</span>
-								<span>триллер</span>
-								<span>боевик</span>
-								<span>криминал</span>
-								<span>ужасы</span>
-								<span>приключения</span>
-								<span class="active">семейный</span>
-								<span>фэнтези</span>
-								<span>фантастика</span>
-								<div class="more">ещё &#8250;</div>
+						</div>
+					</div> <!--   -->
+
+					<div class="show480">
+						<div class="input-row__field">
+							<div class="select js-select">
+								<span class="select__text js-select-text"></span>
+								<input type="hidden" class="js-select-input" value="">
+								<ul class="select__list js-select-list">
+									<li data-id="0"><a href="#">Категория</a></li>
+									<li data-id="1"><a href="#">Фильм</a></li>
+									<li data-id="2"><a href="#">Сериал</a></li>
+									<li data-id="3"><a href="#">Телешоу</a></li>
+									<li data-id="4"><a href="#">Мультфильм</a></li>
+									<li data-id="5"><a href="#">Спорт</a></li>
+								</ul>
 							</div>
 						</div>
-
-						<div class="sort_item">
-							<div class="sort_title">Страна:</div>
-							<div class="sort_tags">
-								<span>США</span>
-								<span>Россия</span>
-								<span>СССР</span>
-								<span>Франция</span>
-								<span>Великобритания</span>
-								<span>Беларусь</span>
-								<span>Германия</span>
-								<span>Гонконг</span>
-								<span>Индия</span>
-								<span>Испания</span>
-								<span>Италия</span>
-								<span>Казахстан</span>
-								<div class="more">ещё &#8250;</div>
+						<div class="input-row__field">
+							<div class="select js-select">
+								<span class="select__text js-select-text"></span>
+								<input type="hidden" class="js-select-input" value="">
+								<ul class="select__list js-select-list">
+									<li data-id="0"><a href="#">Год выпуска</a></li>
+									<li data-id="1"><a href="#">1542</a></li>
+									<li data-id="2"><a href="#">1600</a></li>
+									<li data-id="3"><a href="#">1700</a></li>
+									<li data-id="4"><a href="#">1500</a></li>
+									<li data-id="5"><a href="#">1800</a></li>
+								</ul>
 							</div>
 						</div>
-
-					</div>
+						<div class="input-row__field">
+							<div class="select js-select">
+								<span class="select__text js-select-text"></span>
+								<input type="hidden" class="js-select-input" value="">
+								<ul class="select__list js-select-list">
+									<li data-id="0"><a href="#">Жанр</a></li>
+									<li data-id="1"><a href="#">Фильм</a></li>
+									<li data-id="2"><a href="#">Сериал</a></li>
+									<li data-id="3"><a href="#">Телешоу</a></li>
+									<li data-id="4"><a href="#">Мультфильм</a></li>
+									<li data-id="5"><a href="#">Спорт</a></li>
+								</ul>
+							</div>
+						</div>
+						<div class="input-row__field">
+							<div class="select js-select">
+								<span class="select__text js-select-text"></span>
+								<input type="hidden" class="js-select-input" value="">
+								<ul class="select__list js-select-list">
+									<li data-id="0"><a href="#">Страна</a></li>
+									<li data-id="1"><a href="#">Фильм</a></li>
+									<li data-id="2"><a href="#">Сериал</a></li>
+									<li data-id="3"><a href="#">Телешоу</a></li>
+									<li data-id="4"><a href="#">Мультфильм</a></li>
+									<li data-id="5"><a href="#">Спорт</a></li>
+								</ul>
+							</div>
+						</div>
+					</div> <!-- + -->
 
 					<div class="sort_btn"><span>Подобрать</span></div>
+
 				</div>
 
 			</div>
@@ -586,7 +650,7 @@
 
 
 
-			<div class="category_slider">
+			<div class="category_slider category__description">
 
 				<div class="fixed">
 
@@ -600,7 +664,7 @@
 
 					<div class="category_slider_inner">
 
-						<div class="category_slider_item double_slide">
+						<div class="category_slider_item double_slide has_description">
 							<a href="/">
 								<span class="thumb"><img src="images/pic_05.jpg" alt="" /></span>
 								<span class="category_slider_title">Игра Престолов</span>
@@ -627,7 +691,7 @@
 							</div>
 						</div>
 
-						<div class="category_slider_item">
+						<div class="category_slider_item has_description">
 							<a href="/">
 								<span class="thumb"><img src="images/pic_06.jpg" alt="" /></span>
 								<span class="category_slider_title">Доктор Хаус</span>
@@ -654,7 +718,7 @@
 							</div>
 						</div>
 
-						<div class="category_slider_item">
+						<div class="category_slider_item has_description">
 							<a href="/">
 								<span class="thumb"><img src="images/pic_07.jpg" alt="" /></span>
 								<span class="category_slider_title">Во все тяжкие</span>
@@ -681,7 +745,7 @@
 							</div>
 						</div>
 
-						<div class="category_slider_item">
+						<div class="category_slider_item has_description">
 							<a href="/">
 								<span class="thumb"><img src="images/pic_06.jpg" alt="" /></span>
 								<span class="category_slider_title">Доктор Хаус</span>
@@ -708,7 +772,7 @@
 							</div>
 						</div>
 
-						<div class="category_slider_item">
+						<div class="category_slider_item has_description">
 							<a href="/">
 								<span class="thumb"><img src="images/pic_07.jpg" alt="" /></span>
 								<span class="category_slider_title">Во все тяжкие</span>
@@ -735,7 +799,7 @@
 							</div>
 						</div>
 
-						<div class="category_slider_item">
+						<div class="category_slider_item has_description">
 							<a href="/">
 								<span class="thumb"><img src="images/pic_06.jpg" alt="" /></span>
 								<span class="category_slider_title">Доктор Хаус</span>
@@ -762,7 +826,7 @@
 							</div>
 						</div>
 
-						<div class="category_slider_item">
+						<div class="category_slider_item has_description">
 							<a href="/">
 								<span class="thumb"><img src="images/pic_07.jpg" alt="" /></span>
 								<span class="category_slider_title">Во все тяжкие</span>
