@@ -1539,7 +1539,7 @@ div.noUi-handle:hover {
 
 .category_slider_inner {
 	width: 1024px;
-	height: 390px;
+	/*height: 390px;*/
 	position: relative;
 }
 
@@ -1578,7 +1578,7 @@ div.noUi-handle:hover {
 	position: relative;
 	text-decoration: none;
 	width: 218px;
-	height: 390px;
+	/*height: 390px;*/
 	padding: 0 24px 0 14px;
 }
 

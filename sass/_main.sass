@@ -1,16 +1,9 @@
 $n: transparent
-#header
-	+r(925)
-		height: auto
-	+r(768)
-		.fixed
-			width: 100%
 
 .award
 	width: 36%
 
-// .category_slider_inner li.double_slide > a, .category_slider_item.double_slide > a, .category_slider_inner li.double_slide .thumb, .category_slider_item.double_slide .thumb
-// 	width: 50vw
+
 
 
 .footer_bottom_propose
@@ -272,10 +265,17 @@ $n: transparent
 @each $s in icon_kino, icon_serial, icon_mult, icon_tele, icon_sport
 	.#{$s}
 		+s(#{$s})
+		li:hover &,
+		.active &
+			+s(#{$s}_h)
 		+r(500)
 			+s(#{$s}_480)
+			li:hover &,
+			.active &
+				+s(#{$s}_480_h)
 		+r(465)
 			+scale(.8)
+
 
 
 .menu__pad_4
@@ -296,7 +296,17 @@ $n: transparent
 
 #header
 	+g(#fff, #d5e6f9)
-
+	+r(925)
+		height: auto
+	+r(768)
+		.fixed
+			width: 100%
+	+r(500)
+		background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgi…gd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgZmlsbD0idXJsKCNncmFkKSIgLz48L3N2Zz4g')
+		background-size: 100%
+		background-image: -moz-linear-gradient(#ffffff 0%, #d5e6f9 50%, #ffffff 51%, #d5e6f9 100%)
+		background-image: -webkit-linear-gradient(#ffffff 0%, #d5e6f9 50%, #ffffff 51%, #d5e6f9 100%)
+		background-image: linear-gradient(#ffffff 0%, #d5e6f9 50%, #ffffff 51%, #d5e6f9 100%)
 
 .slider_large li
 	overflow: hidden
@@ -503,8 +513,8 @@ $n: transparent
 		width: 50vw!important
 		height: 216px
 		> a
-			.thumb
-				height: 216px
+			// .thumb
+			// 	height: 216px
 			img
 				height: 216px
 		.category_slider_title,
@@ -522,26 +532,32 @@ $n: transparent
 		height: 440px
 		> a
 			width: 95%!important
-			height: 315px !important
+			height: 344px
+			+r(380)
+				height: 285px
+			+r(320)
+				height: 240px
 			.thumb
 				height: 315px
 				-webkit-box-shadow: none
 				box-shadow: none
 			img
-				height: 315px!important
+				// height: 315px!important //23.07
 		.description
 			margin: 0
 			width: 95%
+.has_description.double_slide
+	+r(600)
+		width: 100vw !important
 
 
-
-.category__description
-	height: 390px
-	overflow: hidden
-	+r(768)
-		height: 300px
-	+r(550)
-		height: 530px
+// .category__description
+// 	height: 390px
+// 	overflow: hidden
+// 	+r(768)
+// 		height: 300px
+// 	+r(550)
+// 		height: 530px
 
 +r(768)
 	.category_slider_inner li.has_description > a, .category_slider_item.has_description > a
@@ -550,8 +566,9 @@ $n: transparent
 		padding: 0
 		.thumb
 			width: 100%
+			height: auto
 		img
-			height: 216px
+			height: auto //23.07
 	.description
 		position: relative
 		width: 48%
@@ -560,9 +577,10 @@ $n: transparent
 		display: block
 		top: 0
 		vertical-align: top
-		height: 216px
+		// height: 216px //23.07
 		+r(550)
-			height: 315px
+			// height: 315px //23.07
+			// height: auto
 	.descr_title
 		font-size: 18px
 	.video_info span + span
@@ -1103,9 +1121,17 @@ $n: transparent
 		width: 100%
 	+r(400)
 		a
-			width: 49%
+			width: 50%
 		> a + a
 			border-left: none
+
+
+.film_nav > a:first-child,
+.film_nav > a:last-child
+	+r(400)
+		-webkit-border-radius: 0
+		border-radius: 0
+
 .film_about
 	+r(905)
 		padding-bottom: 15px
@@ -1572,3 +1598,4 @@ $n: transparent
 .show720
 	display: none
 	margin-top: 0
+
