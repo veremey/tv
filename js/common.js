@@ -1,4 +1,4 @@
-$(document).ready(function() {
+head.ready(function() {
 
 	// $(document).on("click", function(){
 	// 	$(".js-popup").hide();
@@ -15,8 +15,5 @@ $(document).ready(function() {
 	//     scrollFixedElements()
 	// });
 
-	var w = screen.width,
-    h = screen.height;
-		alert(w + 'x' + h)
-
+	console.log($('body').html());
 });
