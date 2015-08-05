@@ -14,6 +14,37 @@ $(function(){
 		return false;
 	});
 
+	// select 480  //поиск на главной странице
+
+
+// 	$('.ui-field-contain select:selected').click(function() {
+
+// 		console.log($(this).text());
+
+// });
+// 	$('.ui-field-contain select').click(function() {
+
+// 		console.log($(this).children('option').filter(':selected'));
+
+// });
+
+
+	//мы рекомендуем слайдер
+
+
+	// $('.slider__slick').slick({
+	// 		dots: false,
+	// 		infinite: true,
+	// 		centerMode: true,
+	// 		speed: 300,
+	// 		slidesToShow: 4,
+	// 		slidesToScroll: 1,
+	// 		variableWidth: true,
+	// 		adaptiveHeight: true
+	// 	});
+
+
+
 	// film_poster
 		$('.film_about_details').on('click', function() {
 			$('.film_info').slideToggle();
