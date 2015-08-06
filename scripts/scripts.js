@@ -32,16 +32,16 @@ $(function(){
 	//мы рекомендуем слайдер
 
 
-	// $('.slider__slick').slick({
-	// 		dots: false,
-	// 		infinite: true,
-	// 		centerMode: true,
-	// 		speed: 300,
-	// 		slidesToShow: 4,
-	// 		slidesToScroll: 1,
-	// 		variableWidth: true,
-	// 		adaptiveHeight: true
-	// 	});
+	$('.slider__slick').slick({
+			dots: false,
+			infinite: true,
+			centerMode: true,
+			speed: 300,
+			slidesToShow: 4,
+			slidesToScroll: 1,
+			variableWidth: true,
+			adaptiveHeight: true
+		});
 
 
 
