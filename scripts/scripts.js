@@ -367,7 +367,9 @@ $(function(){
 
 });
 
-if (/iPhone|iPad|iPod/.test(navigator.platform) && navigator.userAgent.indexOf("AppleWebKit") > -1) {
+// baxazar comment 06.08
+
+/*if (/iPhone|iPad|iPod/.test(navigator.platform) && navigator.userAgent.indexOf("AppleWebKit") > -1) {
 	(function(win, doc) {
 
 		// change viewport to landscape size (device-height)
@@ -408,6 +410,10 @@ if (/iPhone|iPad|iPod/.test(navigator.platform) && navigator.userAgent.indexOf("
 
 	})(window, document);
 }
+*/
+// baxazar comment 06.08
+
+
 
 function reload_carousel(carousel, item_width) {
 
