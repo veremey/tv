@@ -22,6 +22,8 @@
 	<script type="text/javascript" src="scripts/jquery-ui-1.10.3.custom.js"></script>
 	<script type="text/javascript" src="scripts/jquery.mobile-1.4.5.js"></script>
 	<script type="text/javascript" src="scripts/slick.min.js"></script>
+	<script type="text/javascript" src="scripts/cycle.carousel.js"></script>
+	<script type="text/javascript" src="scripts/cycle.js"></script>
 	<script type="text/javascript" src="scripts/scripts.js"></script>
 </head>
 <body>
@@ -169,7 +171,7 @@
 							<li class="menu__pad_2"><a href="/"><i class="icon_serial"></i>Сериалы</a></li>
 							<li class="menu__pad_3"><a href="/"><i class="icon_tele"></i>Телешоу</a></li>
 							<li class="menu__pad_4"><a href="/"><i class="icon_sport"></i>Спорт</a>
-								<ul class="submenu submenu__right_coner">
+								<ul class="submenu">
 									<li><a href="/">Футбол</a></li>
 									<li><a href="/">Баскетбол</a></li>
 									<li><a href="/">Хокей</a></li>
@@ -630,114 +632,123 @@
 
 					<div class="slider_nav">
 						<span class='pad427_50'>Мы рекомендуем
-							<span class="arrow_l top15_427"><span></span></span>
-							<span class="arrow_r top15_427"><span></span></span>
+							<span class="arrow_l top15_427 page__back"><span></span></span>
+							<span class="arrow_r top15_427 page__next"><span></span></span>
 						</span>
 					</div>
 
 				</div>
 
 				<div class="slide_long_inner">
+					<!-- client__slider -->
+					<div class="client__slider">
+						<div class="cycle-slideshow js-cycle"
+							data-cycle-fx="carousel"
+							data-cycle-swipe="true"
+							data-cycle-slides=".dotr_box"
+							data-cycle-timeout="2000"
+							data-cycle-next=".page__next"
+							data-cycle-prev=".page__back"
+							>
+								<div class="dotr_box">
+									<a href="/">
+										<span class="thumb"><img src="images/pic_111.jpg" alt="" /></span>
+										<span class="slider_long_title">Леон</span>
+										<span class="slider_long_text">Франция, 1994</span>
+									</a>
+								</div>
 
-					<div class="slider__slick">
-						<div class="slick__box">
-							<a href="/">
-								<span class="thumb"><img src="images/pic_111.jpg" alt="" /></span>
-								<span class="slider_long_title">Леон</span>
-								<span class="slider_long_text">Франция, 1994</span>
-							</a>
-						</div>
+								<div class="dotr_box">
+									<a href="/">
+										<span class="thumb"><img src="images/pic_222.jpg" alt="" /></span>
+										<span class="slider_long_title">Молчание ягнят</span>
+										<span class="slider_long_text">США, 1991</span>
+									</a>
+								</div>
 
-						<div class="slick__box">
-							<a href="/">
-								<span class="thumb"><img src="images/pic_222.jpg" alt="" /></span>
-								<span class="slider_long_title">Молчание ягнят</span>
-								<span class="slider_long_text">США, 1991</span>
-							</a>
-						</div>
+								<div class="dotr_box">
+									<a href="/">
+										<span class="thumb"><img src="images/pic_333.jpg" alt="" /></span>
+										<span class="slider_long_title">Гладиатор</span>
+										<span class="slider_long_text">США, 2000</span>
+									</a>
+								</div>
 
-						<div class="slick__box">
-							<a href="/">
-								<span class="thumb"><img src="images/pic_333.jpg" alt="" /></span>
-								<span class="slider_long_title">Гладиатор</span>
-								<span class="slider_long_text">США, 2000</span>
-							</a>
-						</div>
+								<div class="dotr_box">
+									<a href="/">
+										<span class="thumb"><img src="images/pic_444.jpg" alt="" /></span>
+										<span class="slider_long_title">Титаник</span>
+										<span class="slider_long_text">США, 1997</span>
+									</a>
+								</div>
 
-						<div class="slick__box">
-							<a href="/">
-								<span class="thumb"><img src="images/pic_444.jpg" alt="" /></span>
-								<span class="slider_long_title">Титаник</span>
-								<span class="slider_long_text">США, 1997</span>
-							</a>
-						</div>
+								<div class="dotr_box">
+									<a href="/">
+										<span class="thumb"><img src="images/pic_111.jpg" alt="" /></span>
+										<span class="slider_long_title">Леон</span>
+										<span class="slider_long_text">Франция, 1994</span>
+									</a>
+								</div>
 
-						<div class="slick__box">
-							<a href="/">
-								<span class="thumb"><img src="images/pic_111.jpg" alt="" /></span>
-								<span class="slider_long_title">Леон</span>
-								<span class="slider_long_text">Франция, 1994</span>
-							</a>
-						</div>
+								<div class="dotr_box">
+									<a href="/">
+										<span class="thumb"><img src="images/pic_222.jpg" alt="" /></span>
+										<span class="slider_long_title">Молчание ягнят</span>
+										<span class="slider_long_text">США, 1991</span>
+									</a>
+								</div>
 
-						<div class="slick__box">
-							<a href="/">
-								<span class="thumb"><img src="images/pic_222.jpg" alt="" /></span>
-								<span class="slider_long_title">Молчание ягнят</span>
-								<span class="slider_long_text">США, 1991</span>
-							</a>
-						</div>
+								<div class="dotr_box">
+									<a href="/">
+										<span class="thumb"><img src="images/pic_333.jpg" alt="" /></span>
+										<span class="slider_long_title">Гладиатор</span>
+										<span class="slider_long_text">США, 2000</span>
+									</a>
+								</div>
 
-						<div class="slick__box">
-							<a href="/">
-								<span class="thumb"><img src="images/pic_333.jpg" alt="" /></span>
-								<span class="slider_long_title">Гладиатор</span>
-								<span class="slider_long_text">США, 2000</span>
-							</a>
-						</div>
+								<div class="dotr_box">
+									<a href="/">
+										<span class="thumb"><img src="images/pic_444.jpg" alt="" /></span>
+										<span class="slider_long_title">Титаник</span>
+										<span class="slider_long_text">США, 1997</span>
+									</a>
+								</div>
 
-						<div class="slick__box">
-							<a href="/">
-								<span class="thumb"><img src="images/pic_444.jpg" alt="" /></span>
-								<span class="slider_long_title">Титаник</span>
-								<span class="slider_long_text">США, 1997</span>
-							</a>
-						</div>
+								<div class="dotr_box">
+									<a href="/">
+										<span class="thumb"><img src="images/pic_111.jpg" alt="" /></span>
+										<span class="slider_long_title">Леон</span>
+										<span class="slider_long_text">Франция, 1994</span>
+									</a>
+								</div>
 
-						<div class="slick__box">
-							<a href="/">
-								<span class="thumb"><img src="images/pic_111.jpg" alt="" /></span>
-								<span class="slider_long_title">Леон</span>
-								<span class="slider_long_text">Франция, 1994</span>
-							</a>
-						</div>
+								<div class="dotr_box">
+									<a href="/">
+										<span class="thumb"><img src="images/pic_222.jpg" alt="" /></span>
+										<span class="slider_long_title">Молчание ягнят</span>
+										<span class="slider_long_text">США, 1991</span>
+									</a>
+								</div>
 
-						<div class="slick__box">
-							<a href="/">
-								<span class="thumb"><img src="images/pic_222.jpg" alt="" /></span>
-								<span class="slider_long_title">Молчание ягнят</span>
-								<span class="slider_long_text">США, 1991</span>
-							</a>
-						</div>
+								<div class="dotr_box">
+									<a href="/">
+										<span class="thumb"><img src="images/pic_333.jpg" alt="" /></span>
+										<span class="slider_long_title">Гладиатор</span>
+										<span class="slider_long_text">США, 2000</span>
+									</a>
+								</div>
 
-						<div class="slick__box">
-							<a href="/">
-								<span class="thumb"><img src="images/pic_333.jpg" alt="" /></span>
-								<span class="slider_long_title">Гладиатор</span>
-								<span class="slider_long_text">США, 2000</span>
-							</a>
-						</div>
-
-						<div class="slick__box">
-							<a href="/">
-								<span class="thumb"><img src="images/pic_444.jpg" alt="" /></span>
-								<span class="slider_long_title">Титаник</span>
-								<span class="slider_long_text">США, 1997</span>
-							</a>
-						</div>
+								<div class="dotr_box">
+									<a href="/">
+										<span class="thumb"><img src="images/pic_444.jpg" alt="" /></span>
+										<span class="slider_long_title">Титаник</span>
+										<span class="slider_long_text">США, 1997</span>
+									</a>
+								</div>
+							</div>
 
 					</div>
-
+						<!-- client__slider -->
 				</div>
 
 				<div class="shadow_l"></div>
