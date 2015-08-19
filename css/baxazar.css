@@ -203,7 +203,7 @@ body { min-width: 300px; }
 .select__list li:hover { background-color: #C3DAF7; }
 .select__list li a { font-family: Arial, sans-serif; font-size: 16px; color: #52AFE9; border-bottom: 1px dotted #52AFE9; text-decoration: none; }
 
-@media only screen and (max-width: 480px) { .sort_btn span { padding: 10px 0; width: 100%; font-size: 16px; }
+@media only screen and (max-width: 580px) { .sort_btn span { padding: 10px 0; width: 100%; font-size: 16px; }
   .sort_btn span:hover { padding-top: 9px; } }
 
 .menu { *zoom: 1; }
@@ -346,8 +346,8 @@ li:hover .icon_sport, .active .icon_sport { background: url('../images/icons-s34
   .slider_long_text { font-size: 16px; font-weight: 300; }
   .tags a { font-size: 16px; }
   .category_slider { margin-bottom: 25px; }
-  .category_slider_inner li.double_slide > a, .category_slider_item.double_slide > a { width: 94vw; text-align: left; }
-  .category_slider_inner li.double_slide .thumb, .category_slider_item.double_slide .thumb { width: 94vw; text-align: center; }
+  .category_slider_inner li.double_slide > a, .category_slider_item.double_slide > a { text-align: left; }
+  .category_slider_inner li.double_slide .thumb, .category_slider_item.double_slide .thumb { text-align: center; }
   .owl-item .category_slider_inner li.double_slide .thumb, .category_slider_item.double_slide span { text-align: center; }
   .category_slider .slider_nav { padding: 0; }
   .slider_nav > span:before { background: url('../images/icons-s347979e0b8.png') 0 -130px no-repeat; width: 98px; height: 2px; right: -115px; }
@@ -398,8 +398,6 @@ li:hover .icon_sport, .active .icon_sport { background: url('../images/icons-s34
 
 @media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-device-pixel-ratio: 2) and (device-aspect-ratio: 40 / 71) { .slider_long { padding: 20px 0; }
   .category_slider { margin-bottom: 25px; }
-  .category_slider_inner li.double_slide > a, .category_slider_item.double_slide > a { width: 460px; }
-  .category_slider_inner li.double_slide .thumb, .category_slider_item.double_slide .thumb { width: 460px; }
   .category_slider .slider_nav { padding: 0; }
   .slider_nav > span:before { background: url('../images/icons-s347979e0b8.png') 0 -130px no-repeat; width: 98px; height: 2px; right: -115px; }
   .slider_nav > span:after { background: url('../images/icons-s347979e0b8.png') 0 -118px no-repeat; width: 98px; height: 2px; left: -115px; }
