@@ -17,16 +17,16 @@ $(function(){
 	// select 480  //поиск на главной странице
 
 
-// 	$('.ui-field-contain select:selected').click(function() {
+	// 	$('.ui-field-contain select:selected').click(function() {
 
-// 		console.log($(this).text());
+	// 		console.log($(this).text());
 
-// });
-// 	$('.ui-field-contain select').click(function() {
+	// });
+	// 	$('.ui-field-contain select').click(function() {
 
-// 		console.log($(this).children('option').filter(':selected'));
+	// 		console.log($(this).children('option').filter(':selected'));
 
-// });
+	// });
 
 
 	//мы рекомендуем слайдер
@@ -36,38 +36,40 @@ $(function(){
 			dots: false,
 			infinite: true,
 			centerMode: true,
+			centerPadding: '20px',
 			speed: 300,
 			slidesToShow: 4,
 			slidesToScroll: 1,
 			variableWidth: true,
-			adaptiveHeight: true
+			adaptiveHeight: true,
+			prevArrow: $(".js-page__back"),
+			nextArrow: $(".js-page__next")
 		});
-
-
 
 	// film_poster
-		$('.film_about_details').on('click', function() {
-			$('.film_info').slideToggle();
-			$(this).toggleClass('is_active');
-			$('.film_prize').toggleClass('film_prize_width');
-			$('.film_descr').toggleClass('film_descr_width');
-			return false;
+	$('.film_about_details').on('click', function() {
+		$('.film_info').slideToggle();
+		$(this).toggleClass('is_active');
+		$('.film_prize').toggleClass('film_prize_width');
+		$('.film_descr').toggleClass('film_descr_width');
+		return false;
+	});
+
+
+	if ($(document).width() <= 480) {
+		$('.film_rating .stars .descr').addClass('stars__show');
+		$('.submenu__right_coner').removeClass('submenu__right_coner');
+	};
+
+	$('.stars__show').on('click', function () {
+			$('.film_rating .stars__rank').slideToggle();
+		});
+	$('.radio').on('click', function () {
+			$('.film_rating .stars__rank').slideUp();
 		});
 
-		if ($(document).width() <= 480) {
-			$('.film_rating .stars .descr').addClass('stars__show');
-			$('.submenu__right_coner').removeClass('submenu__right_coner');
-		};
-
-		$('.stars__show').on('click', function () {
-				$('.film_rating .stars__rank').slideToggle();
-			});
-		$('.radio').on('click', function () {
-				$('.film_rating .stars__rank').slideUp();
-			});
-
-//480
-//хлебные крошки  ХЕДЕР
+	//480
+	//хлебные крошки  ХЕДЕР
 
 	$('.js_gime__more').on('click', function() {
 		$(this).parents('#container').find('.side__bread, .everybody_in_shadow').slideToggle('fast');
@@ -367,51 +369,51 @@ $(function(){
 
 });
 
-// baxazar comment 06.08
+	// baxazar comment 06.08
 
-/*if (/iPhone|iPad|iPod/.test(navigator.platform) && navigator.userAgent.indexOf("AppleWebKit") > -1) {
-	(function(win, doc) {
+	/*if (/iPhone|iPad|iPod/.test(navigator.platform) && navigator.userAgent.indexOf("AppleWebKit") > -1) {
+		(function(win, doc) {
 
-		// change viewport to landscape size (device-height)
-		var viewport = doc.querySelector('meta[name=viewport]');
-		viewport.content = 'width=device-height';
+			// change viewport to landscape size (device-height)
+			var viewport = doc.querySelector('meta[name=viewport]');
+			viewport.content = 'width=device-height';
 
-		// creates height guard
-		var heightGuard = doc.createElement('div');
-		heightGuard.id = 'heightGuard';
-		doc.body.appendChild(heightGuard);
+			// creates height guard
+			var heightGuard = doc.createElement('div');
+			heightGuard.id = 'heightGuard';
+			doc.body.appendChild(heightGuard);
 
-		// must know if it's an iPad since it has a different screen proportion
-		var isiPad = /iPad/.test(navigator.platform);
+			// must know if it's an iPad since it has a different screen proportion
+			var isiPad = /iPad/.test(navigator.platform);
 
-		// new style element
-		var css = doc.createElement('style');
-		doc.body.appendChild(css);
-		css.innerText =
-			"@media screen and (orientation:portrait){" +
-				"body{"+
-					"position:relative;"+
-				"}"+
-				"#heightGuard{" +
-					"position:absolute;" +
-					"top:0;" +
-					"left:0;" +
-					"width:1px;" +
-					"zIndex:-1;" +
-					"visibility:hidden;" +
-					"height:" + (isiPad? '133.333%' : '150%') + ";" +
-				"}" +
-				"#" + (doc.body.getAttribute('data-container') || 'container') + "{" +
-					"-webkit-transform:" + (isiPad? 'scale(1.33333)' : 'scale(1.5)') + ";" +
-					"-webkit-transform-origin:top left;" +
-					"width:" + (isiPad? '768px' : '320px') + ";" +
-				"}" +
-			"}";
+			// new style element
+			var css = doc.createElement('style');
+			doc.body.appendChild(css);
+			css.innerText =
+				"@media screen and (orientation:portrait){" +
+					"body{"+
+						"position:relative;"+
+					"}"+
+					"#heightGuard{" +
+						"position:absolute;" +
+						"top:0;" +
+						"left:0;" +
+						"width:1px;" +
+						"zIndex:-1;" +
+						"visibility:hidden;" +
+						"height:" + (isiPad? '133.333%' : '150%') + ";" +
+					"}" +
+					"#" + (doc.body.getAttribute('data-container') || 'container') + "{" +
+						"-webkit-transform:" + (isiPad? 'scale(1.33333)' : 'scale(1.5)') + ";" +
+						"-webkit-transform-origin:top left;" +
+						"width:" + (isiPad? '768px' : '320px') + ";" +
+					"}" +
+				"}";
 
-	})(window, document);
-}
-*/
-// baxazar comment 06.08
+		})(window, document);
+	}
+	*/
+	// baxazar comment 06.08
 
 
 

@@ -96,17 +96,6 @@
 .slick-prev.slick-disabled, .slick-next.slick-disabled { opacity: 0.2; }
 .slick-prev:before, .slick-next:before { height: 50px; line-height: 50px; }
 
-.slick-prev { left: 34.5%; }
-@media only screen and (max-width: 1250px) { .slick-prev { left: 32.5%; } }
-@media only screen and (max-width: 1150px) { .slick-prev { left: 30.5%; } }
-@media only screen and (max-width: 980px) { .slick-prev { left: 25.5%; } }
-@media only screen and (max-width: 830px) { .slick-prev { left: 21.5%; } }
-@media only screen and (max-width: 715px) { .slick-prev { left: 16.5%; } }
-@media only screen and (max-width: 610px) { .slick-prev { left: 11.5%; } }
-@media only screen and (max-width: 530px) { .slick-prev { left: 5.5%; } }
-@media only screen and (max-width: 470px) { .slick-prev { left: 0.5%; } }
-@media only screen and (max-width: 360px) { .slick-prev { top: -12%; } }
-
 .slick-next { right: 34.5%; }
 @media only screen and (max-width: 1250px) { .slick-next { right: 32.5%; } }
 @media only screen and (max-width: 1150px) { .slick-next { right: 30.5%; } }
@@ -178,8 +167,9 @@ body { min-width: 300px; }
 
 .cycle-slideshow { width: 100%; height: 390px; position: relative; *zoom: 1; }
 .cycle-slideshow:after { content: " "; display: table; clear: both; }
-.cycle-slideshow .dotr_box { position: relative; float: left; vertical-align: top; width: 215px; }
-.cycle-slideshow .dotr_box a { display: block; text-align: center; text-decoration: none; }
+
+.dotr_box { position: relative; float: left; vertical-align: top; width: 215px; margin: 0 10px; }
+.dotr_box a { display: block; text-align: center; text-decoration: none; }
 
 @media only screen and (max-width: 500px) { .ui-field-contain label { position: relative; display: none; }
   .ui-field-contain #select-native-1 { margin-bottom: 0; display: block; position: relative; width: 100%; height: 45px !important; min-height: 0 !important; margin: 0 !important; padding: 0 !important; z-index: 15; border: none; font-size: 20px; font-weight: 400; color: #52AFE9; border: 1px solid #d1e3fa; background: #eff6ff; -webkit-border-radius: 3px; border-radius: 3px; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; border-bottom: transparent; border-right: transparent; }
