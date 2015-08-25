@@ -37,7 +37,7 @@ $(function(){
 			infinite: true,
 			centerMode: true,
 			centerPadding: '20px',
-			speed: 300,
+			speed: 500,
 			slidesToShow: 4,
 			slidesToScroll: 1,
 			variableWidth: true,
@@ -45,6 +45,44 @@ $(function(){
 			prevArrow: $(".js-page__back"),
 			nextArrow: $(".js-page__next")
 		});
+
+
+
+
+
+
+
+
+
+
+	//перезагрузка страницы при изменении размера
+	$(window).on('resize',function(){
+			$(".owl-carousel").data('owlCarousel').reinit();
+		});
+
+
+
+
+
+
+
+
+
+
+
+
+	// $('.category_slider_inner').slick({
+	// 		dots: false,
+	// 		infinite: true,
+	// 		centerPadding: '20px',
+	// 		speed: 500,
+	// 		slidesToShow: 2,
+	// 		slidesToScroll: 1,
+	// 		variableWidth: true,
+	// 		adaptiveHeight: true,
+	// 		prevArrow: $(".js-back"),
+	// 		nextArrow: $(".js-next")
+	// 	});
 
 	// film_poster
 	$('.film_about_details').on('click', function() {
@@ -80,10 +118,6 @@ $(function(){
 		$(this).parents('#container').find('.side__bread, .side__menu').slideUp();
 		$(this).fadeOut();
 	});
-
-
-
-
 	function select() {
 		$(".js-select").each(function(){
 			var select_list = $(this).parent().find(".js-select-list");
@@ -119,8 +153,6 @@ $(function(){
 	    event.stopPropagation();
 	});
 
-
-	//
 
 	$('.footer__butter').on('click', function() {
 		$('.footer_bottom_propose').slideToggle(500);
@@ -232,9 +264,6 @@ $(function(){
 			$(this).css('width', $(this).outerWidth());
 		});
 
-
-
-
 		$('.category_slider_inner').on('translate.owl.carousel', function(event){
 
 			var element = event.target;
@@ -280,12 +309,8 @@ $(function(){
 					}, 200);
 
 					item.data('timer', timer);
-
 				}
-
 			});
-
-
 		}).owlCarousel({
 			loop: true,
 			autoWidth: true,
