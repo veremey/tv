@@ -1598,9 +1598,57 @@ div.noUi-handle:hover {
 	height: 328px;
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .category_slider_inner li.double_slide, .category_slider_item.double_slide {
-	width: 520px;
+	width: 520px!important;
 }
+.category_slider_inner li.double_slide.has_description, .category_slider_item.double_slide.has_description {
+	width: 520px!important;
+}
+
+/*.category_slider_item.double_slide.has_description{
+	width: auto !important;
+}*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .category_slider_inner li.double_slide img, .category_slider_item.double_slide img {
 	width: 520px;
 
@@ -1616,9 +1664,12 @@ div.noUi-handle:hover {
 	width: 480px;
 }
 
+
 .category_slider_inner li.double_slide .thumb img, .category_slider_item.double_slide .thumb img {
 	max-width: 480px;
 }
+
+
 
 .category_slider_title {
 	display: block;

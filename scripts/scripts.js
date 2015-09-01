@@ -55,10 +55,10 @@ $(function(){
 
 
 
-	//перезагрузка страницы при изменении размера
-	$(window).on('resize',function(){
-			$(".owl-carousel").data('owlCarousel').reinit();
-		});
+	// //перезагрузка страницы при изменении размера
+	// $(window).on('resize',function(){
+	// 		$(".owl-carousel").data('owlCarousel').reinit();
+	// 	});
 
 
 
@@ -390,7 +390,8 @@ $(function(){
 			});
 		}; // end baxazar -> if wrap
 
-	}
+
+	}   // END   if ($.fn.owlCarousel && $('.category_slider_inner')
 
 });
 
@@ -464,6 +465,12 @@ function reload_carousel(carousel, item_width) {
 	return items_width;
 
 }
+
+
+	//перезагрузка страницы при изменении размера
+	$(window).on('resize',function(){
+			reload_carousel($('.category_slider_inner'));
+		});
 
 function center_carousel(carousel) {
 

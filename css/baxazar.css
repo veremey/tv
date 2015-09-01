@@ -483,7 +483,7 @@ li:hover .icon_sport, .active .icon_sport { background: url('../images/icons-s34
 
 .video_info span { display: block; margin-bottom: 5px; }
 
-@media only screen and (max-width: 768px) { .has_description { width: 50vw !important; height: 216px; }
+@media only screen and (max-width: 768px) { .has_description { height: 216px; }
   .has_description > a img { height: 216px; }
   .has_description .category_slider_title, .has_description .category_slider_text { display: none; }
   .has_description .description { background: none; -webkit-box-shadow: none; box-shadow: none; background-color: transparent; float: left; margin-left: 5%; } }
