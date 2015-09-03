@@ -488,19 +488,17 @@ li:hover .icon_sport, .active .icon_sport { background: url('../images/icons-s34
   .has_description .category_slider_title, .has_description .category_slider_text { display: none; }
   .has_description .description { background: none; -webkit-box-shadow: none; box-shadow: none; background-color: transparent; float: left; margin-left: 5%; } }
 @media only screen and (max-width: 550px) { .has_description { height: 440px; }
-  .has_description > a { width: 95% !important; height: 344px; } }
-@media only screen and (max-width: 550px) and (max-width: 380px) { .has_description > a { height: 285px; } }
-@media only screen and (max-width: 550px) and (max-width: 320px) { .has_description > a { height: 240px; } }
-@media only screen and (max-width: 550px) { .has_description > a .thumb { height: 315px; -webkit-box-shadow: none; box-shadow: none; }
+  .has_description > a { width: 95% !important; height: 344px; }
+  .has_description > a .thumb { height: 315px; -webkit-box-shadow: none; box-shadow: none; }
   .has_description .description { margin: 0; width: 95%; }
   .has_description .description span { text-align: left; } }
 
 @media only screen and (max-width: 500px) { .has_description.double_slide { width: 100vw !important; } }
 
-@media only screen and (max-width: 768px) { .category_slider_inner li.has_description > a, .category_slider_item.has_description > a { width: 38%; float: left; padding: 0; }
+@media only screen and (max-width: 768px) { .category_slider_inner li.has_description > a, .category_slider_item.has_description > a { width: 80%; float: left; padding: 0; }
   .category_slider_inner li.has_description > a .thumb, .category_slider_item.has_description > a .thumb { width: 100%; height: auto; }
   .category_slider_inner li.has_description > a img, .category_slider_item.has_description > a img { height: auto; }
-  .description { background-color: transparent; position: relative; width: 48%; float: right; padding: 0; display: block; top: 0; vertical-align: top; }
+  .description { background-color: transparent; position: relative; width: 80%; float: right; padding: 0; display: block; top: 0; vertical-align: top; }
   .descr_title { font-size: 18px; font-family: Arial; }
   .video_info span + span { display: block; margin-left: 0; margin-top: 5px; }
   .descr_info, .descr_bottom { display: none; } }
