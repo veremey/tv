@@ -3,11 +3,11 @@
 
 ## Странички просмотра 
 
-Главная: [1]
-Актеры: [2]
-Каталог: [3]
-404: [4]
-постеры: [5]
+Главная: [https://veremey.github.com/tv]
+Актеры: [ https://veremey.github.com/tv/actor.html]
+Каталог: [ https://veremey.github.com/tv/catalog.html]
+404: [ https://veremey.github.com/tv/error.html]
+постеры: [ https://veremey.github.com/tv/film_posters.html]
 
 [1]: https://veremey.github.com/tv
 [2]: https://veremey.github.com/tv/actor.html
