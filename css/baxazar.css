@@ -508,19 +508,25 @@ li:hover .icon_sport, .active .icon_sport { background: url('../images/icons-s34
 @media only screen and (max-width: 360px) { .items .item-c { width: 100%; margin: 0 0 26px; }
   .items .item-c:nth-child(even) { margin-left: 0; } }
 @media only screen and (max-width: 580px) { .actor_l { width: 160px; }
-  .actor_l .thumb { width: 160px; }
-  .actor_l .thumb img { width: 160px; }
-  .actor_rating .up { width: 63px; padding: 0 0 0 15px; font-size: 14px; line-height: 44px; }
-  .actor_rating .up span { background: url('../images/icons-s347979e0b8.png') 0 -962px no-repeat; width: 18px; height: 18px; margin: 9px 10px 0; }
-  .actor_rating .up:hover { width: 62px; padding: 0 0 0 15px; font-size: 14px; line-height: 44px; }
+  .actor_l .thumb { width: 100%; }
+  .actor_l .thumb img { width: 100%; }
+  .actor_rating .up { width: 63px; padding: 0 0 0 15px; font-size: 14px; line-height: 44px; } }
+@media only screen and (max-width: 580px) and (max-width: 320px) { .actor_rating .up { width: 40px; padding: 0 0 0 8px; height: 30px; line-height: 30px; font-size: 12px; } }
+@media only screen and (max-width: 580px) { .actor_rating .up span { background: url('../images/icons-s347979e0b8.png') 0 -962px no-repeat; width: 18px; height: 18px; margin: 9px 10px 0; } }
+@media only screen and (max-width: 580px) and (max-width: 320px) { .actor_rating .up span { margin: 5px 0 0; -ms-transform: scale(0.7); -webkit-transform: scale(0.7); transform: scale(0.7); } }
+@media only screen and (max-width: 580px) { .actor_rating .up:hover { width: 62px; padding: 0 0 0 15px; font-size: 14px; line-height: 44px; }
   .actor_rating .up:hover span { -ms-transform: scale(1.2); -webkit-transform: scale(1.2); transform: scale(1.2); }
-  .actor_rating .down { width: 63px; padding: 0 15px 0 0; font-size: 14px; line-height: 44px; }
-  .actor_rating .down span { background: url('../images/icons-s347979e0b8.png') 0 -1277px no-repeat; width: 18px; height: 18px; margin: 13px 10px 0; }
-  .actor_rating .down:hover { width: 62px; padding: 0 15px 0 0; font-size: 14px; line-height: 44px; }
+  .actor_rating .down { width: 63px; padding: 0 15px 0 0; font-size: 14px; line-height: 44px; } }
+@media only screen and (max-width: 580px) and (max-width: 320px) { .actor_rating .down { width: 40px; padding: 0 8px 0 0; height: 30px; font-size: 12px; line-height: 30px; } }
+@media only screen and (max-width: 580px) { .actor_rating .down span { background: url('../images/icons-s347979e0b8.png') 0 -1277px no-repeat; width: 18px; height: 18px; margin: 13px 10px 0; } }
+@media only screen and (max-width: 580px) and (max-width: 320px) { .actor_rating .down span { margin: 5px 0 0; -ms-transform: scale(0.7); -webkit-transform: scale(0.7); transform: scale(0.7); } }
+@media only screen and (max-width: 580px) { .actor_rating .down:hover { width: 62px; padding: 0 15px 0 0; font-size: 14px; line-height: 44px; }
   .actor_rating .down:hover span { -ms-transform: scale(1.2); -webkit-transform: scale(1.2); transform: scale(1.2); }
   .actor_info { margin-left: 175px; }
   .prize_title { font-size: 18px; font-weight: 400; }
   .actor_r .more_prize { margin-top: 5px; } }
+@media only screen and (max-width: 320px) { .more_prize:before { content: none; } }
+
 @media only screen and (max-width: 900px) { .actor_r { margin-left: 0; }
   .actor_l { margin: 0 15px 15px 0; } }
 @media only screen and (max-width: 1080px) { .prize_title { vertical-align: top; display: block; margin-bottom: 20px; } }
@@ -529,7 +535,7 @@ li:hover .icon_sport, .active .icon_sport { background: url('../images/icons-s34
 @media only screen and (max-width: 700px) { .prize_title { vertical-align: top; float: left; width: 100%; margin: 0; } }
 @media only screen and (max-width: 350px) { .more_prize { margin-right: 0; }
   .prize .award { margin-bottom: 5px; } }
-@media only screen and (max-width: 400px) { .actor_l { width: 100% !important; float: none; }
+@media only screen and (max-width: 400px) { .actor_l { width: 100px !important; }
   .actor_l .thumb { margin: 0 auto; }
   .actor_rating { width: 160px; margin: 10px auto; }
   .actor_r { width: 95%; margin: 0 auto; }

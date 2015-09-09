@@ -1539,9 +1539,18 @@ div.noUi-handle:hover {
 
 .category_slider_inner {
 	width: 1024px;
-	/*height: 390px;*/
+	height: 390px;
 	position: relative;
 }
+
+/*  ######### 09.09 ###########
+
+
+/*
+.category__description .category_slider_inner{
+	height: 500px;
+}
+*/
 
 .category_slider_inner ul {
 	display: block;
