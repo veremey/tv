@@ -138,6 +138,7 @@ body { min-width: 300px; }
 .film_title p { margin-right: 45px; }
 .film_title .sort_tags { vertical-align: middle; }
 @media only screen and (max-width: 655px) { .film_title .sort_tags { margin: 15px 0 0; } }
+@media only screen and (max-width: 585px) { .film_title .sort_tags { width: 100%; } }
 
 .category_slider_inner { min-width: 320px; }
 
@@ -544,9 +545,6 @@ li:hover .icon_sport, .active .icon_sport { background: url('../images/icons-s34
 @media only screen and (max-width: 350px) { .more_prize { margin-right: 0; }
   .prize .award { margin-bottom: 5px; } }
 @media only screen and (max-width: 400px) { .actor_l { width: 100px !important; } }
-.award { width: 36%; }
-@media only screen and (max-width: 480px) { .award { width: 42%; } }
-
 .clear { clear: both; display: table; height: 0; }
 
 .awards { width: 445px; }
@@ -663,20 +661,23 @@ li:hover .icon_sport, .active .icon_sport { background: url('../images/icons-s34
 
 @media only screen and (max-width: 905px) { .film_about { padding-bottom: 15px; margin-top: 15px; } }
 
-.film_about_details { display: inline-block; position: relative; margin-bottom: 15px; color: #3888E4; }
+.film_about_details { display: none; position: relative; margin-bottom: 0; padding: 3px; border-top-left-radius: 5px; border-top-right-radius: 5px; color: #3888E4; }
+@media only screen and (max-width: 768px) { .film_about_details { display: inline-block !important; } }
 .film_about_details:after { content: ""; position: absolute; bottom: 6px; right: -12px; background: url('../images/icons-s347979e0b8.png') 0 -13px no-repeat; width: 5px; height: 3px; }
-@media only screen and (max-width: 905px) { .film_about_details { position: relative; margin-bottom: 15px; font-size: 11px; color: #3888E4; padding-right: 15px; }
-  .film_about_details:after { left: 47%; } }
+@media only screen and (max-width: 905px) { .film_about_details { position: relative; font-size: 11px; color: #3888E4; padding-right: 15px; }
+  .film_about_details:after { left: 90%; } }
 @media only screen and (max-width: 905px) and (max-width: 585px) { .film_about_details:after { left: 16%; } }
 @media only screen and (max-width: 905px) and (max-width: 580px) { .film_about_details:after { display: none; } }
-@media only screen and (max-width: 905px) and (max-width: 768px) { .film_about_details:after { bottom: 6px; } }
+@media only screen and (max-width: 905px) and (max-width: 768px) { .film_about_details:after { bottom: 8px; } }
 
-.film_about_details.is_active::after { -ms-transform: rotate(180deg); -webkit-transform: rotate(180deg); transform: rotate(180deg); left: 48%; }
+.film_about_details.is_active { background-color: #D9EAF8; }
+
+.film_about_details.is_active::after { -ms-transform: rotate(180deg); -webkit-transform: rotate(180deg); transform: rotate(180deg); left: 90%; }
 @media only screen and (max-width: 585px) { .film_about_details.is_active::after { left: 17%; } }
 
 @media only screen and (max-width: 1030px) { .film_info { width: 440px; margin-bottom: 30px; } }
-@media only screen and (max-width: 770px) { .film_info { background-color: #D9EAF8; } }
-@media only screen and (max-width: 688px) { .film_info { width: 360px; } }
+@media only screen and (max-width: 768px) { .film_info { background-color: #D9EAF8; width: 67%; padding: 10px; float: right; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; } }
+@media only screen and (max-width: 585px) { .film_info { width: 100%; } }
 
 @media only screen and (max-width: 905px) { .bird__bottom { background: url('../images/icons-s347979e0b8.png') 0 0 no-repeat; width: 5px; height: 3px; } }
 
@@ -852,5 +853,5 @@ li:hover .icon_sport, .active .icon_sport { background: url('../images/icons-s34
 .show720 { display: none; margin-top: 0; }
 
 @media only screen and (max-width: 768px) { .category_slider_inner li.double_slide > a, .category_slider_item.double_slide > a { width: auto; }
-  .thumb { width: 100% !important; height: auto !important; }
-  .thumb img { width: 100% !important; height: auto !important; margin-bottom: 10px; } }
+  .category_slider_item .thumb { width: 100% !important; height: auto !important; }
+  .category_slider_item .thumb img { width: 100% !important; height: auto !important; margin-bottom: 10px; } }
