@@ -1539,18 +1539,9 @@ div.noUi-handle:hover {
 
 .category_slider_inner {
 	width: 1024px;
-	height: 390px;
+	/*height: 390px;*/
 	position: relative;
 }
-
-/*  ######### 09.09 ###########
-
-
-/*
-.category__description .category_slider_inner{
-	height: 500px;
-}
-*/
 
 .category_slider_inner ul {
 	display: block;
@@ -1620,34 +1611,34 @@ div.noUi-handle:hover {
 
 
 
+/* чтобы картинки не прилипали друг к другу на слайдере */
 
 
 
-/* comment 07.09 */
 
 
-@media only screen and (min-width: 428px) {
 
-	.category_slider_inner li.double_slide, .category_slider_item.double_slide {
-		width: 520px!important;
-	}
-
-
-	.category_slider_inner li.double_slide.has_description, .category_slider_item.double_slide.has_description {
-		width: 520px!important;
-	}
-
+.category_slider_inner li.double_slide, .category_slider_item.double_slide {
+	width: 520px!important;
 }
-
-
-
-
+.category_slider_inner li.double_slide.has_description, .category_slider_item.double_slide.has_description {
+	width: 520px!important;
+}
 
 /*.category_slider_item.double_slide.has_description{
 	width: auto !important;
 }*/
 
 
+
+@media only screen and (max-width: 428px){
+	.category_slider_inner li.double_slide, .category_slider_item.double_slide {
+		width: 100vw!important;
+	}
+	.category_slider_inner li.double_slide.has_description, .category_slider_item.double_slide.has_description {
+		width: 100vw!important;
+}
+}
 
 
 
@@ -2600,7 +2591,7 @@ div.noUi-handle:hover {
 
 .prize .award {
 	width: 155px;
-/*	margin: 0 5px 0 0;*/
+	margin: 0 5px 0 0;
 }
 
 .award {
