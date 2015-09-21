@@ -1612,11 +1612,7 @@ div.noUi-handle:hover {
 
 
 /* чтобы картинки не прилипали друг к другу на слайдере */
-
-
-
-
-
+/*
 
 .category_slider_inner li.double_slide, .category_slider_item.double_slide {
 	width: 520px!important;
@@ -1624,11 +1620,13 @@ div.noUi-handle:hover {
 .category_slider_inner li.double_slide.has_description, .category_slider_item.double_slide.has_description {
 	width: 520px!important;
 }
+ */
+
 
 /*.category_slider_item.double_slide.has_description{
 	width: auto !important;
-}*/
-
+}
+*/
 
 
 @media only screen and (max-width: 428px){
@@ -1637,14 +1635,8 @@ div.noUi-handle:hover {
 	}
 	.category_slider_inner li.double_slide.has_description, .category_slider_item.double_slide.has_description {
 		width: 100vw!important;
+	}
 }
-}
-
-
-
-
-
-
 
 
 

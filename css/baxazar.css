@@ -110,10 +110,7 @@
 
 @media only screen and (max-width: 500px) { .footer__butter { display: block; float: left; margin: 35px 0 0 9px; } }
 @media only screen and (max-width: 364px) { .slider_nav .top15_427 { top: 15px; } }
-@media only screen and (max-width: 427px) { .slider_nav .pad427_50 { padding: 0 50px; }
-  .category_slider_inner li.double_slide > a, .category_slider_item.double_slide > a, .category_slider_inner li.double_slide .thumb, .category_slider_item.double_slide .thumb { width: 90vw; }
-  .category_slider_inner li.double_slide, .category_slider_item.double_slide { width: 100vw; }
-  .category_slider .slider_nav { padding: 0; } }
+@media only screen and (max-width: 427px) { .slider_nav .pad427_50 { padding: 0 50px; } }
 @media only screen and (max-width: 615px) { .subs { height: 95px; }
   .subs span { width: 90%; text-align: left; margin-top: 15px; }
   .subs form { margin-top: 10px; width: 100%; } }
@@ -121,10 +118,23 @@
 body { min-width: 300px; }
 @media only screen and (max-width: 768px) { body { background: #FFF; } }
 
+@media only screen and (max-width: 427px) { .category_slider_inner li.double_slide > a, .category_slider_item.double_slide > a, .category_slider_inner li.double_slide .thumb, .category_slider_item.double_slide .thumb { width: 90vw; }
+  .category_slider_inner li.double_slide, .category_slider_item.double_slide { width: 100vw; }
+  .category_slider .slider_nav { padding: 0; } }
 @media only screen and (max-width: 500px) { .category_slider_inner li.double_slide .thumb img, .category_slider_item.double_slide .thumb img { width: 94vw; height: auto; } }
 
 @media only screen and (max-width: 500px) { .category_slider_inner li.double_slide .thumb, .category_slider_item.double_slide .thumb { height: auto; width: 94vw !important; } }
 
+.category_slider_inner { min-width: 320px; }
+
+@media only screen and (max-width: 600px) { .category_slider_inner li.double_slide > a, .category_slider_item.double_slide > a { text-align: left; }
+  .category_slider_inner li.double_slide .thumb, .category_slider_item.double_slide .thumb { text-align: center; }
+  .owl-item .category_slider_inner li.double_slide .thumb, .category_slider_item.double_slide span { text-align: center; }
+  .category_slider .slider_nav { padding: 0; }
+  .slider_nav > span:before { background: url('../images/icons-s347979e0b8.png') 0 -130px no-repeat; width: 98px; height: 2px; right: -115px; }
+  .slider_nav > span:after { background: url('../images/icons-s347979e0b8.png') 0 -118px no-repeat; width: 98px; height: 2px; left: -115px; }
+  .double_slide .category_slider_title, .double_slide .category_slider_text { width: 100%; font-size: 16px; }
+  .double_slide .category_slider_title { font-size: 18px; } }
 .footer_bottom_propose { display: none; }
 
 .tabs { padding-top: 5px; }
@@ -139,8 +149,6 @@ body { min-width: 300px; }
 .film_title .sort_tags { vertical-align: middle; }
 @media only screen and (max-width: 655px) { .film_title .sort_tags { margin: 15px 0 0; } }
 @media only screen and (max-width: 585px) { .film_title .sort_tags { width: 100%; } }
-
-.category_slider_inner { min-width: 320px; }
 
 @media only screen and (max-width: 500px) { .extended_search form { margin-bottom: 20px; background-color: #FFF; } }
 
@@ -341,14 +349,6 @@ li:hover .icon_sport, .active .icon_sport { background: url('../images/icons-s34
   .slider_long_text { font-size: 16px; font-weight: 300; }
   .tags a { font-size: 16px; }
   .category_slider { margin-bottom: 25px; }
-  .category_slider_inner li.double_slide > a, .category_slider_item.double_slide > a { text-align: left; }
-  .category_slider_inner li.double_slide .thumb, .category_slider_item.double_slide .thumb { text-align: center; }
-  .owl-item .category_slider_inner li.double_slide .thumb, .category_slider_item.double_slide span { text-align: center; }
-  .category_slider .slider_nav { padding: 0; }
-  .slider_nav > span:before { background: url('../images/icons-s347979e0b8.png') 0 -130px no-repeat; width: 98px; height: 2px; right: -115px; }
-  .slider_nav > span:after { background: url('../images/icons-s347979e0b8.png') 0 -118px no-repeat; width: 98px; height: 2px; left: -115px; }
-  .double_slide .category_slider_title, .double_slide .category_slider_text { width: 100%; font-size: 16px; }
-  .double_slide .category_slider_title { font-size: 18px; }
   .extended_search { background-color: #FFF; padding-top: 0; background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuNSIgeTE9IjAuMCIgeDI9IjAuNSIgeTI9IjEuMCI+PHN0b3Agb2Zmc2V0PSI1NSUiIHN0b3AtY29sb3I9IiNmZmZmZmYiLz48c3RvcCBvZmZzZXQ9IjEyMCUiIHN0b3AtY29sb3I9IiNlOGYxZmMiLz48L2xpbmVhckdyYWRpZW50PjwvZGVmcz48cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSJ1cmwoI2dyYWQpIiAvPjwvc3ZnPiA='); background-size: 100%; background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(55%, #ffffff), color-stop(120%, #e8f1fc)); background-image: -moz-linear-gradient(#ffffff 55%, #e8f1fc 120%); background-image: -webkit-linear-gradient(#ffffff 55%, #e8f1fc 120%); background-image: linear-gradient(#ffffff 55%, #e8f1fc 120%); }
   .sort_btn { margin-top: 10px; margin-bottom: 0; }
   .sort_btn span:after, .sort_btn span:before { display: none; }
@@ -471,16 +471,17 @@ li:hover .icon_sport, .active .icon_sport { background: url('../images/icons-s34
   .has_description .description { margin: 0; width: 95%; }
   .has_description .description span { text-align: left; } }
 
-.has_description.double_slide { *zoom: 1; }
-.has_description.double_slide:after { content: " "; display: table; clear: both; }
-@media only screen and (max-width: 500px) { .has_description.double_slide { width: 100vw !important; height: auto !important; } }
+.double_slide { *zoom: 1; }
+.double_slide:after { content: " "; display: table; clear: both; }
+@media only screen and (max-width: 500px) { .double_slide { width: 100vw !important; height: auto !important; } }
 
 @media only screen and (max-width: 500px) { .category_slider_inner { height: auto !important; } }
 
-@media only screen and (max-width: 768px) { .category_slider_inner li.has_description > a, .category_slider_item.has_description > a { width: 80%; float: left; padding: 0; }
-  .category_slider_inner li.has_description > a .thumb, .category_slider_item.has_description > a .thumb { width: 100%; height: auto; }
-  .category_slider_inner li.has_description > a img, .category_slider_item.has_description > a img { height: auto; }
+@media only screen and (max-width: 768px) { .category_slider_inner li.has_description > a, .category_slider_item.has_description > a, .category_slider_inner li.double_slide > a, .category_slider_item.double_slide > a { width: 80%; float: left; padding: 0; }
+  .category_slider_inner li.has_description > a .thumb, .category_slider_item.has_description > a .thumb, .category_slider_inner li.double_slide > a .thumb, .category_slider_item.double_slide > a .thumb { width: 100%; height: auto; }
+  .category_slider_inner li.has_description > a img, .category_slider_item.has_description > a img, .category_slider_inner li.double_slide > a img, .category_slider_item.double_slide > a img { height: auto; }
   .category_slider_inner li.has_description > a, .category_slider_item.double_slide.has_description > a { width: 90%; }
+  .category_slider_inner li.double_slide > a, .category_slider_item.double_slide > a { width: 100%; }
   .description { background-color: transparent; position: relative; width: 80%; float: right; padding: 0; display: block; top: 0; vertical-align: top; }
   .descr_title { font-size: 18px; font-family: Arial; }
   .video_info span + span { display: block; margin-left: 0; margin-top: 5px; }
@@ -852,6 +853,6 @@ li:hover .icon_sport, .active .icon_sport { background: url('../images/icons-s34
 
 .show720 { display: none; margin-top: 0; }
 
-@media only screen and (max-width: 768px) { .category_slider_inner li.double_slide > a, .category_slider_item.double_slide > a { width: auto; }
-  .category_slider_item .thumb { width: 100% !important; height: auto !important; }
-  .category_slider_item .thumb img { width: 100% !important; height: auto !important; margin-bottom: 10px; } }
+@media only screen and (min-width: 768px) { .category_slider_inner li.double_slide, .category_slider_item.double_slide { width: 480px !important; }
+  .category_slider_inner li > a, .category_slider_item > a { display: block !important; width: 100% !important; }
+  .category_slider_inner li.double_slide .thumb, .category_slider_item.double_slide .thumb { width: 460px !important; } }

@@ -100,11 +100,11 @@ $(function(){
 	};
 
 	$('.stars__show').on('click', function () {
-			$('.film_rating .stars__rank').slideToggle();
+		$('.film_rating .stars__rank').slideToggle();
 		});
 	$('.radio').on('click', function () {
-			$('.film_rating .stars__rank').slideUp();
-		});
+		$('.film_rating .stars__rank').slideUp();
+	});
 
 	//480
 	//хлебные крошки  ХЕДЕР

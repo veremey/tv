@@ -6,6 +6,24 @@ body
 	+r(768)
 		background: #FFF
 
+
+
+// problem slider
+
+
+
++r(427)
+	.category_slider_inner li.double_slide > a, .category_slider_item.double_slide > a,
+	.category_slider_inner li.double_slide .thumb, .category_slider_item.double_slide .thumb
+		width: 90vw
+	.category_slider_inner li.double_slide, .category_slider_item.double_slide
+		width: 100vw
+
+	.category_slider .slider_nav
+		padding: 0
+
+
+
 .category_slider_inner li.double_slide .thumb img, .category_slider_item.double_slide .thumb img
 	+r(500)
 		width: 94vw
@@ -14,6 +32,49 @@ body
 	+r(500)
 		height: auto
 		width: 94vw !important
+
+.category_slider_inner
+	min-width: 320px
+
++r(600)
+
+	.category_slider_inner li.double_slide > a, .category_slider_item.double_slide > a
+		// width: 94vw
+		text-align: left//19.08
+	.category_slider_inner li.double_slide .thumb, .category_slider_item.double_slide .thumb
+		// width: 94vw
+		text-align: center
+
+
+
+
+
+	.owl-item .category_slider_inner li.double_slide .thumb, .category_slider_item.double_slide span
+		text-align: center
+
+	.category_slider .slider_nav
+		padding: 0
+	.slider_nav > span:before
+		+s(dotted_480_r)
+		right: -115px
+	.slider_nav > span:after
+		+s(dotted_480_l)
+		left: -115px
+
+	.double_slide .category_slider_title, .double_slide .category_slider_text
+		width: 100%
+		font-size: 16px
+	.double_slide .category_slider_title
+		font-size: 18px
+
+
+
+
+
+
+
+
+
 
 
 .footer_bottom_propose
@@ -36,8 +97,9 @@ body
 		vertical-align: middle
 		+r(655)
 			margin: 15px 0 0
-.category_slider_inner
-	min-width: 320px
+		+r(585)
+			width: 100%
+
 
 .extended_search
 	+r(500)
@@ -487,8 +549,9 @@ body
 		width: 50%
 		text-align: center !important
 .menu__pad_6
-	width: 22%
 	text-align: center!important
+	+r(500)
+		width: 22%
 
 
 
@@ -632,36 +695,33 @@ body
 
 
 
+	//on top
+
+	// .category_slider_inner li.double_slide > a, .category_slider_item.double_slide > a
+	// 	// width: 94vw
+	// 	text-align: left//19.08
+	// .category_slider_inner li.double_slide .thumb, .category_slider_item.double_slide .thumb
+	// 	// width: 94vw
+	// 	text-align: center
+	// .owl-item .category_slider_inner li.double_slide .thumb, .category_slider_item.double_slide span
+	// 	text-align: center
+
+	// .category_slider .slider_nav
+	// 	padding: 0
+	// .slider_nav > span:before
+	// 	+s(dotted_480_r)
+	// 	right: -115px
+	// .slider_nav > span:after
+	// 	+s(dotted_480_l)
+	// 	left: -115px
+
+	// .double_slide .category_slider_title, .double_slide .category_slider_text
+	// 	width: 100%
+	// 	font-size: 16px
+	// .double_slide .category_slider_title
+	// 	font-size: 18px
 
 
-	.category_slider_inner li.double_slide > a, .category_slider_item.double_slide > a
-		// width: 94vw
-		text-align: left//19.08
-	.category_slider_inner li.double_slide .thumb, .category_slider_item.double_slide .thumb
-		// width: 94vw
-		text-align: center
-
-
-
-
-
-	.owl-item .category_slider_inner li.double_slide .thumb, .category_slider_item.double_slide span
-		text-align: center
-
-	.category_slider .slider_nav
-		padding: 0
-	.slider_nav > span:before
-		+s(dotted_480_r)
-		right: -115px
-	.slider_nav > span:after
-		+s(dotted_480_l)
-		left: -115px
-
-	.double_slide .category_slider_title, .double_slide .category_slider_text
-		width: 100%
-		font-size: 16px
-	.double_slide .category_slider_title
-		font-size: 18px
 	.extended_search
 		background-color: #FFF
 		padding-top: 0
@@ -1149,10 +1209,17 @@ body
 			width: 95%
 			span
 				text-align: left
-.has_description.double_slide
+.double_slide// .has_description.double_slide
+	+clr
 	+r(500)
 		width: 100vw !important
+		height: auto !important
+.category_slider_inner
+	+r(500)
+		height: auto !important
 
+
+// can delete
 
 // .category__description
 // 	height: 390px
@@ -1161,9 +1228,12 @@ body
 // 		height: 300px
 // 	+r(550)
 // 		height: 530px
+// top can dell
+
+
 
 +r(768)
-	.category_slider_inner li.has_description > a, .category_slider_item.has_description > a
+	.category_slider_inner li.has_description > a, .category_slider_item.has_description > a, .category_slider_inner li.double_slide > a, .category_slider_item.double_slide > a
 		width: 80%
 		float: left
 		padding: 0
@@ -1172,8 +1242,10 @@ body
 			height: auto
 		img
 			height: auto //23.07
-	.category_slider_inner li.has_description > a, .category_slider_item.double_slide.has_description > a
+	.category_slider_inner li.has_description > a, .category_slider_item.double_slide.has_description > a,
 		width: 90%
+	.category_slider_inner li.double_slide > a, .category_slider_item.double_slide > a
+		width: 100%
 	.description
 		background-color: $n
 		position: relative
@@ -1271,22 +1343,61 @@ body
 			&:nth-child(even)
 				margin-left: 0
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// ####################################################################################################################################################################################################################################################
+
+
+
+
+
+
+
+
+
+
+
+.video_info
+	.rating
+		display: inline-block
+
 +r(580)
 	.actor_l
 		width: 160px
 	.actor_l .thumb
-		width: 160px
+		width: 100%
 		img
-			width: 160px
+			width: 100%
 	.actor_rating
 		.up
 			width: 63px
 			padding: 0 0 0 15px
 			font-size: 14px
 			line-height: 44px
+			+r(400)
+				width: 40px
+				padding: 0 0 0 8px
+				height: 30px
+				line-height: 30px
+				font-size: 12px
 			span
 				+s(like-icon_480)
 				margin: 9px 10px 0
+				+r(400)
+					margin: 5px 0 0
+					+scale(.7)
 			&:hover
 				width: 62px
 				padding: 0 0 0 15px
@@ -1299,9 +1410,18 @@ body
 			padding: 0 15px 0 0
 			font-size: 14px
 			line-height: 44px
+			+r(400)
+				width: 40px
+				padding: 0 8px 0 0
+				height: 30px
+				font-size: 12px
+				line-height: 30px
 			span
 				+s(unlike-icon_480)
 				margin: 13px 10px 0
+				+r(400)
+					margin: 5px 0 0
+					+scale(.7)
 			&:hover
 				width: 62px
 				padding: 0 15px 0 0
@@ -1311,12 +1431,29 @@ body
 					+scale(1.2)
 	.actor_info
 		margin-left: 175px
+		+r(400)
+			margin-left: 115px
 	.prize_title
 		font-size: 18px
 		font-weight: 400
 	.actor_r
 		.more_prize
 			margin-top: 5px
+			+r(400)
+				margin-left: 0
+				padding-left: 0
+.more_prize:before
+	+r(480)
+		content: none
+
+
+
+
+// ####################################################################################################################################################################################################################################################
+
+
+
+
 
 +r(900)
 	.actor_r
@@ -1324,7 +1461,7 @@ body
 	.actor_l
 		margin: 0 15px 15px 0
 
-+r(1080)
++r(1190)
 	.prize_title
 		vertical-align: top
 		display: block
@@ -1354,32 +1491,34 @@ body
 		margin-bottom: 5px
 +r(400)
 	.actor_l
-		width: 100% !important
-		float: none
-		.thumb
-			margin: 0 auto
+		width: 100px !important
+// 		// float: none
+// 		.thumb
+// 			margin: 0 auto
 	.actor_rating
 		width: 160px
 		margin: 10px auto
-	.actor_r
-		width: 95%
-		margin: 0 auto
+// 	.actor_r
+// 		width: 95%
+// 		margin: 0 auto
 	.actor_info
 		margin-left: 0 !important
 
 
 
 
-.award
-	width: 36%
-	+r(480)
-		width: 42%
+// .award
+	// width: 36%
+	// +r(480)
+		// width: 42%
 .clear
 	clear: both
 	display: table
 	height: 0
 .awards
-	width: 345px
+	width: 445px
+	+r(990)
+		width: 345px
 	+r(725)
 		width: 320px
 .prize .awards
@@ -1405,15 +1544,15 @@ body
 	+r(700)
 		float: right
 		width: 50%
-		transform: translate(0, -85px)
+		transform: translate(0, -80px)
 	+r(480)
 		width: 28%
-		transform: translate(0, -95px)
+		transform: translate(0, 0px)
 		margin-right: 40px
-	+r(405)
-		width: 100%
 		float: none
-		transform: translate(0, 0)
+		width: 100%
+		padding-left: 0
+		margin-left: 0
 
 
 
@@ -1825,10 +1964,15 @@ body
 		padding-bottom: 15px
 		margin-top: 15px
 .film_about_details
-	display: inline-block
+	display: none
 	position: relative
-	margin-bottom: 15px
+	margin-bottom: 0
+	padding: 3px
+	border-top-left-radius: 5px
+	border-top-right-radius: 5px
 	color: #3888E4
+	+r(768)
+		display: inline-block!important
 	&:after
 		content: ""
 		position: absolute
@@ -1839,7 +1983,6 @@ body
 		// float: left
 		// display: inline-block
 		position: relative
-		margin-bottom: 15px
 		// margin-right: 55%
 		// width: 65%
 		font-size: 11px
@@ -1847,29 +1990,35 @@ body
 		padding-right: 15px
 		// float: left
 		&:after
-			left: 47%
+			left: 90%
 			+r(585)
 				left: 16%
 			+r(580)
 				display: none
 		+r(768)
 			&:after
-				bottom: 6px
+				bottom: 8px
 		// +r(680)
 		// 	float: left
+.film_about_details.is_active
+	background-color: #D9EAF8
 .film_about_details.is_active::after
 	+rotate(180)
-	left: 48%
+	left: 90%
 	+r(585)
 		left: 17%
 .film_info
 	+r(1030)
 		width: 440px
 		margin-bottom: 30px
-	+r(770)
+	+r(768)
 		background-color: #D9EAF8
-	+r(688)
-		width: 360px
+		width: 67%
+		padding: 10px
+		float: right
+		+box
+	+r(585)
+		width: 100%
 
 .bird__bottom
 	+r(905)
@@ -2290,3 +2439,39 @@ body
 	display: none
 	margin-top: 0
 
+
+
+
+
+
+// +r(768)
+// 	.category_slider_inner li.double_slide > a, .category_slider_item.double_slide > a
+// 		width: auto
+// 	.category_slider_item
+// 		.thumb
+// 			width: 100%!important
+// 			height: auto!important
+// 			img
+// 				width: 100%!important
+// 				height: auto!important
+// 				margin-bottom: 10px
+
+@media only screen and (min-width: 768px)
+	// .category_slider_item.double_slide
+	// 	width: 500px!important
+	// .category_slider_item.double_slide.has_description
+	// 	width: 500px!important
+	// .category_slider_item.double_slide a
+	// 	width: 480px!important
+	// .category_slider_item.double_slide.has_description a
+	// 	width: 480px!important
+
+	.category_slider_inner li.double_slide, .category_slider_item.double_slide
+		width: 480px !important
+
+	.category_slider_inner li > a, .category_slider_item > a
+		display: block!important
+		width: 100%!important
+
+	.category_slider_inner li.double_slide .thumb, .category_slider_item.double_slide .thumb
+		width: 460px!important
