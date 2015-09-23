@@ -476,28 +476,6 @@ body
 				> a
 					height: 84px
 					line-height: 110px
-				+iphone5
-					display: inline-block
-					vertical-align: top
-					text-align: left
-					height: 44px
-					display: inline-block
-					> a
-						font-size: 12px
-						height: 44px
-						line-height: 50px
-						font-size: 18px
-						padding-right: 8px
-						+r(438)
-							font-size: 15px
-						+r(400)
-							padding-right: 3%
-						+r(360)
-							font-size: 14px
-						+r(340)
-							font-size: 13px
-						+r(320)
-							padding-right: 2%
 				+r(500)
 					display: inline-block
 					vertical-align: top
@@ -510,6 +488,28 @@ body
 						line-height: 50px
 						font-size: 18px
 						padding-right: 7px
+						+r(438)
+							font-size: 15px
+						+r(400)
+							padding-right: 3%
+						+r(360)
+							font-size: 14px
+						+r(340)
+							font-size: 13px
+						+r(320)
+							padding-right: 2%
+				+iphone5
+					display: inline-block
+					vertical-align: top
+					text-align: left
+					height: 44px
+					display: inline-block
+					> a
+						font-size: 12px
+						height: 44px
+						line-height: 50px
+						font-size: 18px
+						padding-right: 8px
 						+r(438)
 							font-size: 15px
 						+r(400)
@@ -551,6 +551,8 @@ body
 .menu__pad_6
 	text-align: center!important
 	+r(500)
+		width: 22%
+	+iphone5
 		width: 22%
 
 
@@ -986,6 +988,9 @@ body
 		+r(500)
 			margin: 6px 0 0 60px
 			+s(logo_480)
+		+iphone5
+			margin: 6px 0 0 60px
+			+s(logo_480)
 	.burger__menu
 		position: absolute
 		top: 11px
@@ -993,6 +998,8 @@ body
 		z-index: 151
 		+s(burger__menu)
 		+r(500)
+			+s(burger__menu_480)
+		+iphone5
 			+s(burger__menu_480)
 	.side__menu
 		display: none
