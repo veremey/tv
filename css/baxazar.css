@@ -172,6 +172,21 @@ body { min-width: 300px; }
 
 @media only screen and (max-width: 500px) { .extended_search:before, .extended_search:after { display: none; } }
 
+@media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-device-pixel-ratio: 2) and (device-aspect-ratio: 40 / 71) { .ui-field-contain label { position: relative; display: none; }
+  .ui-field-contain #select-native-1 { margin-bottom: 0; display: block; position: relative; width: 100%; height: 45px !important; min-height: 0 !important; margin: 0 !important; padding: 0 !important; z-index: 15; border: none; font-size: 20px; font-weight: 400; color: #52AFE9; border: 1px solid #d1e3fa; background: #eff6ff; -webkit-border-radius: 3px; border-radius: 3px; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; border-bottom: transparent; border-right: transparent; }
+  .ui-field-contain #select-native-1 option { font-size: 16px; }
+  .ui-field-contain .ui-btn { position: relative; font-size: 20px; font-weight: 400; color: #52AFE9; border: 1px solid #d1e3fa; background: #eff6ff; -webkit-border-radius: 3px; border-radius: 3px; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; border-bottom: transparent; border-right: transparent; height: 45px; line-height: 45px; padding: 0 15px !important; text-align: left; }
+  .ui-field-contain .ui-btn:after { content: ""; position: absolute; top: 20px; right: 20px; width: 0px; height: 0px; border-style: solid; border-width: 5px 4.5px 0 4.5px; border-color: #52AFE9 transparent transparent transparent; }
+  .ui-field-contain .ui-select { margin-bottom: 0; } }
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-device-pixel-ratio: 2) and (device-aspect-ratio: 40 / 71) { .extended_search:before, .extended_search:after { display: none; } }
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-device-pixel-ratio: 2) and (device-aspect-ratio: 40 / 71) { .extended_search form { margin-bottom: 20px; background-color: #FFF; } }
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-device-pixel-ratio: 2) and (device-aspect-ratio: 40 / 71) { .recommend__search .title { font-size: 14px; margin-bottom: 0; } }
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-device-pixel-ratio: 2) and (device-aspect-ratio: 40 / 71) { .extended_search:before, .extended_search:after { display: none; } }
+
 .slick__box { margin: 0 15px; text-align: center; }
 .slick__box img { margin-bottom: 25px; }
 
