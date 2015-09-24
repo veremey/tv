@@ -135,6 +135,15 @@ body { min-width: 300px; }
   .slider_nav > span:after { background: url('../images/icons-s347979e0b8.png') 0 -118px no-repeat; width: 98px; height: 2px; left: -115px; }
   .double_slide .category_slider_title, .double_slide .category_slider_text { width: 100%; font-size: 16px; }
   .double_slide .category_slider_title { font-size: 18px; } }
+.items .item-c { width: 260px; }
+.items .item-c:nth-child(3n+1) { margin-left: 26px; }
+.items .item-c:nth-child(4n+1) { margin-left: 0; }
+@media only screen and (max-width: 1310px) { .items .item-c:nth-child(4n+1) { margin-left: 0; }
+  .items .item-c:nth-child(3n+1) { margin-left: 0; } }
+.items .item-c .pic { max-width: 100%; width: 100%; height: auto; vertical-align: top; }
+.items .item-c .pic a { display: inline-block; vertical-align: top; }
+.items .item-c .pic img { max-width: 100%; width: 100%; height: auto; vertical-align: top; }
+
 .footer_bottom_propose { display: none; }
 
 .tabs { padding-top: 5px; }
@@ -457,17 +466,18 @@ li:hover .icon_sport, .active .icon_sport { background: url('../images/icons-s34
   .descr_title { font-size: 18px; font-family: Arial; }
   .video_info span + span { display: block; margin-left: 0; margin-top: 5px; }
   .descr_info, .descr_bottom { display: none; } }
-@media only screen and (max-width: 1130px) { .catalog .topic + .show480 { margin-bottom: 20px; }
+@media only screen and (max-width: 1310px) { .catalog .topic + .show480 { margin-bottom: 20px; }
   .items { text-align: justify; position: relative; *zoom: 1; }
   .items:after { content: " "; display: table; clear: both; }
-  .items .item-c { width: 31%; display: inline-block; margin: 0 0 26px; vertical-align: top; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
-  .items .item-c .pic { width: 100%; height: auto; }
-  .items .item-c .pic a { display: block; position: relative; height: 0; border: none; padding-top: 100%; }
+  .items .item-c { width: 24%; display: inline-block; margin: 0 0 26px; vertical-align: top; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; } }
+@media only screen and (max-width: 1310px) and (max-width: 768px) { .items .item-c { width: 31%; } }
+@media only screen and (max-width: 1310px) { .items .item-c .pic { width: 100%; height: auto; }
+  .items .item-c .pic a { display: block; position: relative; height: 0; border: none; padding-top: 130%; }
   .items .item-c .pic a img { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }
   .items .item-c__center { margin: 0 3% 0; } }
-@media only screen and (max-width: 1130px) and (max-width: 850px) { .items .item-c__center { margin: 0 2% 0; } }
+@media only screen and (max-width: 1310px) and (max-width: 850px) { .items .item-c__center { margin: 0 2% 0; } }
 
-@media only screen and (max-width: 1130px) { .topic span:before { background: url('../images/icons-s347979e0b8.png') 0 -118px no-repeat; width: 98px; height: 2px; }
+@media only screen and (max-width: 1310px) { .topic span:before { background: url('../images/icons-s347979e0b8.png') 0 -118px no-repeat; width: 98px; height: 2px; }
   .topic span:after { background: url('../images/icons-s347979e0b8.png') 0 -130px no-repeat; width: 98px; height: 2px; } }
 @media only screen and (max-width: 600px) { .topic span:before { left: -140px; }
   .topic span:after { right: -140px; }

@@ -8,7 +8,7 @@ body
 
 
 
-// problem slider
+// slider
 
 
 
@@ -45,10 +45,6 @@ body
 		// width: 94vw
 		text-align: center
 
-
-
-
-
 	.owl-item .category_slider_inner li.double_slide .thumb, .category_slider_item.double_slide span
 		text-align: center
 
@@ -67,7 +63,36 @@ body
 	.double_slide .category_slider_title
 		font-size: 18px
 
+//end slider
 
+
+
+
+.items
+	.item-c
+		width: 260px
+		&:nth-child(3n+1)
+			margin-left: 26px
+		&:nth-child(4n+1)
+			margin-left: 0
+		+r(1310)
+			&:nth-child(4n+1)
+				margin-left: 0
+			&:nth-child(3n+1)
+				margin-left: 0
+		.pic
+			max-width: 100%
+			width: 100%
+			height: auto
+			vertical-align: top
+			a
+				display: inline-block
+				vertical-align: top
+			img
+				max-width: 100%
+				width: 100%
+				height: auto
+				vertical-align: top
 
 
 
@@ -263,11 +288,9 @@ body
 				+arr(9,5,#52AFE9,b)
 		.ui-select
 			margin-bottom: 0
-
 .extended_search:before, .extended_search:after
 	+iphone5
 		display: none
-
 .extended_search
 	+iphone5
 		form
@@ -277,7 +300,6 @@ body
 	+iphone5
 		font-size: 14px
 		margin-bottom: 0
-
 .extended_search:before, .extended_search:after
 	+iphone5
 		display: none
@@ -384,8 +406,8 @@ body
 		> li
 			+r(500)
 				height: 44px
-			+iphone5
-				height: 44px
+			// +iphone5
+			// 	height: 44px
 			&:first-child
 				border-left: 1px solid $n
 				&:before
@@ -399,8 +421,8 @@ body
 				top: 84px
 			+r(500)
 				top: 44px
-			+iphone5
-				top: 44px
+			// +iphone5
+			// 	top: 44px
 			li a
 				padding: 8px 25px 10px 17px
 		li:hover .submenu
@@ -436,12 +458,12 @@ body
 			left: 5px
 			padding-right: 10px
 			+translate(0, 0)
-		+iphone5
-			position: relative
-			top: 5px
-			left: 5px
-			padding-right: 10px
-			+translate(0, 0)
+		// +iphone5
+		// 	position: relative
+		// 	top: 5px
+		// 	left: 5px
+		// 	padding-right: 10px
+		// 	+translate(0, 0)
 		+r(444)
 			+scale(.7)
 			top: 8px
@@ -458,18 +480,18 @@ body
 	.show480
 		+r(500)
 			display: inline-block !important
-		+iphone5
-			display: inline-block !important
+		// +iphone5
+		// 	display: inline-block !important
 	+r(768)
 		> ul
 			+r(500)
 				display: block
 				font-size: 0
 				height: auto
-			+iphone5
-				display: block
-				font-size: 0
-				height: auto
+			// +iphone5
+			// 	display: block
+			// 	font-size: 0
+			// 	height: auto
 			> li
 				a
 					padding: 0
@@ -498,28 +520,28 @@ body
 							font-size: 13px
 						+r(320)
 							padding-right: 2%
-				+iphone5
-					display: inline-block
-					vertical-align: top
-					text-align: left
-					height: 44px
-					display: inline-block
-					> a
-						font-size: 12px
-						height: 44px
-						line-height: 50px
-						font-size: 18px
-						padding-right: 8px
-						+r(438)
-							font-size: 15px
-						+r(400)
-							padding-right: 3%
-						+r(360)
-							font-size: 14px
-						+r(340)
-							font-size: 13px
-						+r(320)
-							padding-right: 2%
+				// +iphone5
+				// 	display: inline-block
+				// 	vertical-align: top
+				// 	text-align: left
+				// 	height: 44px
+				// 	display: inline-block
+				// 	> a
+				// 		font-size: 12px
+				// 		height: 44px
+				// 		line-height: 50px
+				// 		font-size: 18px
+				// 		padding-right: 8px
+				// 		+r(438)
+				// 			font-size: 15px
+				// 		+r(400)
+				// 			padding-right: 3%
+				// 		+r(360)
+				// 			font-size: 14px
+				// 		+r(340)
+				// 			font-size: 13px
+				// 		+r(320)
+				// 			// padding-right: 2%
 
 			.submenu__right_coner
 				right: 0
@@ -531,29 +553,29 @@ body
 	+r(500)
 		width: 33%
 		text-align: center !important
-	+iphone5
-		width: 33%
-		text-align: center !important
+	// +iphone5
+	// 	width: 33%
+	// 	text-align: center !important
 .menu__pad_4
 	+r(500)
 		width: 27%
 		text-align: center !important
-	+iphone5
-		width: 27%
-		text-align: center !important
+	// +iphone5
+	// 	width: 27%
+	// 	text-align: center !important
 .menu__pad_5
 	+r(500)
 		width: 50%
 		text-align: center !important
-	+iphone5
-		width: 50%
-		text-align: center !important
+	// +iphone5
+	// 	width: 50%
+	// 	text-align: center !important
 .menu__pad_6
 	text-align: center!important
 	+r(500)
 		width: 22%
-	+iphone5
-		width: 22%
+	// +iphone5
+	// 	width: 22%
 
 
 
@@ -568,11 +590,11 @@ body
 			li:hover &,
 			.active &
 				+s(#{$s}_480_h)
-		+iphone5
-			+s(#{$s}_480)
-			li:hover &,
-			.active &
-				+s(#{$s}_480_h)
+		// +iphone5
+		// 	+s(#{$s}_480)
+		// 	li:hover &,
+		// 	.active &
+		// 		+s(#{$s}_480_h)
 		+r(465)
 			+scale(.8)
 
@@ -583,11 +605,11 @@ body
 		&:before
 			content: none
 			display: none
-	+iphone5
-		border-left: 0!important
-		&:before
-			content: none
-			display: none
+	// +iphone5
+	// 	border-left: 0!important
+	// 	&:before
+	// 		content: none
+	// 		display: none
 
 .recommend__search .title
 	font-weight: 500
@@ -612,12 +634,12 @@ body
 		background-image: -moz-linear-gradient(#ffffff 0%, #d5e6f9 50%, #ffffff 51%, #d5e6f9 100%)
 		background-image: -webkit-linear-gradient(#ffffff 0%, #d5e6f9 50%, #ffffff 51%, #d5e6f9 100%)
 		background-image: linear-gradient(#ffffff 0%, #d5e6f9 50%, #ffffff 51%, #d5e6f9 100%)
-	+iphone5
-		background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgi…gd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgZmlsbD0idXJsKCNncmFkKSIgLz48L3N2Zz4g')
-		background-size: 100%
-		background-image: -moz-linear-gradient(#ffffff 0%, #d5e6f9 50%, #ffffff 51%, #d5e6f9 100%)
-		background-image: -webkit-linear-gradient(#ffffff 0%, #d5e6f9 50%, #ffffff 51%, #d5e6f9 100%)
-		background-image: linear-gradient(#ffffff 0%, #d5e6f9 50%, #ffffff 51%, #d5e6f9 100%)
+	// +iphone5
+	// 	background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgi…gd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgZmlsbD0idXJsKCNncmFkKSIgLz48L3N2Zz4g')
+	// 	background-size: 100%
+	// 	background-image: -moz-linear-gradient(#ffffff 0%, #d5e6f9 50%, #ffffff 51%, #d5e6f9 100%)
+	// 	background-image: -webkit-linear-gradient(#ffffff 0%, #d5e6f9 50%, #ffffff 51%, #d5e6f9 100%)
+	// 	background-image: linear-gradient(#ffffff 0%, #d5e6f9 50%, #ffffff 51%, #d5e6f9 100%)
 
 
 +r(600)
@@ -988,9 +1010,9 @@ body
 		+r(500)
 			margin: 6px 0 0 60px
 			+s(logo_480)
-		+iphone5
-			margin: 6px 0 0 60px
-			+s(logo_480)
+		// +iphone5
+		// 	margin: 6px 0 0 60px
+		// 	+s(logo_480)
 	.burger__menu
 		position: absolute
 		top: 11px
@@ -999,8 +1021,8 @@ body
 		+s(burger__menu)
 		+r(500)
 			+s(burger__menu_480)
-		+iphone5
-			+s(burger__menu_480)
+		// +iphone5
+		// 	+s(burger__menu_480)
 	.side__menu
 		display: none
 		position: absolute
@@ -1275,7 +1297,7 @@ body
 
 
 
-+r(1130)
++r(1310)
 	// .catalog
 	// 	width: 704px
 	// .items .item-c:nth-child(odd)
@@ -1289,12 +1311,14 @@ body
 		position: relative
 		+clr
 		.item-c
-			width: 31%
+			width: 24%//31%
 			display: inline-block
 			// padding-right: 15px
 			margin: 0 0 26px
 			vertical-align: top
 			+box
+			+r(768)
+				width: 31%
 			.pic
 				width: 100%
 				height: auto
@@ -1303,7 +1327,7 @@ body
 					position: relative
 					height: 0
 					border: none
-					padding-top: 100%
+					padding-top: 130%
 					img
 						+coverdiv
 		.item-c__center
