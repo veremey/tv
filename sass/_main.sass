@@ -1455,12 +1455,18 @@ body
 			padding: 0 0 0 15px
 			font-size: 14px
 			line-height: 44px
-			+r(400)
-				width: 40px
-				padding: 0 0 0 8px
-				height: 30px
-				line-height: 30px
-				font-size: 12px
+			// +r(400)
+				// width: 40px
+				// padding: 0 0 0 8px
+				// height: 30px
+				// line-height: 30px
+				// font-size: 12px
+				// &:hover
+				// 	line-height: 30px
+				// 	height: 30px
+				// 	width: 40px
+				// 	span
+				// 		+scale(.8)
 			span
 				+s(like-icon_480)
 				margin: 9px 10px 0
@@ -1479,18 +1485,18 @@ body
 			padding: 0 15px 0 0
 			font-size: 14px
 			line-height: 44px
-			+r(400)
-				width: 40px
-				padding: 0 8px 0 0
-				height: 30px
-				font-size: 12px
-				line-height: 30px
+			// +r(400)
+			// 	width: 40px
+			// 	padding: 0 8px 0 0
+			// 	height: 30px
+			// 	font-size: 12px
+			// 	line-height: 30px
 			span
 				+s(unlike-icon_480)
 				margin: 13px 10px 0
-				+r(400)
-					margin: 5px 0 0
-					+scale(.7)
+				// +r(400)
+				// 	margin: 5px 0 0
+				// 	+scale(.7)
 			&:hover
 				width: 62px
 				padding: 0 15px 0 0
@@ -1514,6 +1520,42 @@ body
 .more_prize:before
 	+r(480)
 		content: none
+.actor_rating
+	.up
+		+r(400)
+			width: 40px
+			padding: 0 0 0 8px
+			height: 30px
+			line-height: 30px
+			font-size: 12px
+			&:hover
+				border-color: #7AC03C
+				line-height: 33px
+				height: 30px
+				width: 40px
+				font-size: 13px
+				padding: 0 0 0 6px
+				span
+					+scale(.8)
+	.down
+		+r(400)
+			width: 40px
+			padding: 0 8px 0 0
+			height: 30px
+			font-size: 12px
+			line-height: 30px
+			span
+				margin: 5px 0 0
+				+scale(.7)
+			&:hover
+				border-color: #CE4848
+				line-height: 33px
+				height: 30px
+				width: 40px
+				font-size: 13px
+				padding: 0 6px 0 0
+				span
+					+scale(.8)
 
 
 
