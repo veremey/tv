@@ -124,6 +124,7 @@ body
 			margin: 15px 0 0
 		+r(585)
 			width: 100%
+			// width: 65%//24.09
 
 
 .extended_search
@@ -981,13 +982,46 @@ body
 	.video_info span
 		font-size: 16px
 
+.comment .comment_text,
+.comment .comment_bottom,
+.comment .add_comment
+	+r(480)
+		font-size: 16px
 
-
-
-
-
-
-
+.comment .comment_more
+	+r(480)
+		font-size: 16px
+	+r(405)
+		display: block
+		margin-left: 0
+		margin-top: 10px
+.comment .comment_top
+	+r(480)
+		font-size: 17px
+		span
+			font-size: 18px
+.reply_body
+	+r(480)
+		padding-top: 15px
+.reply .stars
+	margin-bottom: 10px
+.reply textarea
+	+r(480)
+		font-size: 16px
+.reply .stars .star
+	+r(480)
+		width: 24px
+		+scale(1.2)
+.reply .descr
+	+r(480)
+		font-size: 16px
+.reply input[type="submit"]
+	+r(350)
+		float: none
+		margin: 0 auto
+.pagination
+	+r(480)
+		font-size: 16px
 
 .slider_large li
 	overflow: hidden
@@ -1536,6 +1570,21 @@ body
 		margin-left: 0 !important
 
 
+.pagination
+	+r(750)
+		margin: 15px 0 30px
+.reply
+	+r(480)
+		padding-top: 10px
+	.text_1
+		+r(480)
+			font-size: 24px
+	.text_2
+		+r(480)
+			font-size: 16px
+			margin-bottom: 15px
+.reply_body
+	+r(480)
 
 
 // .award
@@ -1568,8 +1617,12 @@ body
 		.award
 			width: 100%
 			max-width: 100%
+.all_awards
+	+r(500)
+		margin-top: 0
 .prize
 	+r(700)
+		border-bottom: none
 		padding: 30px
 .more_prize
 	+r(700)
@@ -1589,36 +1642,14 @@ body
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 .slider_nav > span
 	+r(425)
 		padding: 0 50px
-	+r(360)
 		font-size: 22px
-	+r(340)
+	+r(380)
 		font-size: 19px
+	+r(350)
+		font-size: 16px
 
 #container
 	+r(615)
@@ -1648,10 +1679,12 @@ body
 		img
 			width: 100%
 	+r(585)
-		width: 100%
+		width: 100%//24.09 comm
 		.thumb
 			width: 80%
 			margin: 0 auto 15px
+	// + .film_title //24.09
+	// 	height: 140px
 
 .film_rating,
 .film_nav
@@ -1726,6 +1759,8 @@ body
 			height: 68px
 			line-height: 68px
 	+r(585)
+		//float: left //24.09
+		//width: 100% //24.09
 		overflow: visible
 		.stars
 			padding-top: 4px

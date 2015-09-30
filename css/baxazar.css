@@ -114,7 +114,7 @@
 @media only screen and (max-width: 615px) { .subs { height: 95px; }
   .subs span { width: 90%; text-align: left; margin-top: 15px; }
   .subs form { margin-top: 10px; width: 100%; } }
-@media only screen and (max-width: 330px) { .subs span { margin-top: 10px; font-size: 15px; } }
+@media only screen and (max-width: 330px) { .subs span { margin-top: 10px; font-size: 18px; } }
 body { min-width: 300px; }
 @media only screen and (max-width: 768px) { body { background: #FFF; } }
 
@@ -385,6 +385,28 @@ li:hover .icon_sport, .active .icon_sport { background: url('../images/icons-s34
 .actor .category_tabs span { margin: 0 6px; }
 .actor .video_info span { font-size: 16px; }
 
+@media only screen and (max-width: 480px) { .comment .comment_text, .comment .comment_bottom, .comment .add_comment { font-size: 16px; } }
+
+@media only screen and (max-width: 480px) { .comment .comment_more { font-size: 16px; } }
+@media only screen and (max-width: 405px) { .comment .comment_more { display: block; margin-left: 0; margin-top: 10px; } }
+
+@media only screen and (max-width: 480px) { .comment .comment_top { font-size: 17px; }
+  .comment .comment_top span { font-size: 18px; } }
+
+@media only screen and (max-width: 480px) { .reply_body { padding-top: 15px; } }
+
+.reply .stars { margin-bottom: 10px; }
+
+@media only screen and (max-width: 480px) { .reply textarea { font-size: 16px; } }
+
+@media only screen and (max-width: 480px) { .reply .stars .star { width: 24px; -ms-transform: scale(1.2); -webkit-transform: scale(1.2); transform: scale(1.2); } }
+
+@media only screen and (max-width: 480px) { .reply .descr { font-size: 16px; } }
+
+@media only screen and (max-width: 350px) { .reply input[type="submit"] { float: none; margin: 0 auto; } }
+
+@media only screen and (max-width: 480px) { .pagination { font-size: 16px; } }
+
 .slider_large li { overflow: hidden; }
 
 .img__wrap { position: absolute; top: 0; left: 50%; margin-left: -960px; width: 1920px; }
@@ -527,6 +549,12 @@ li:hover .icon_sport, .active .icon_sport { background: url('../images/icons-s34
 @media only screen and (max-width: 350px) { .more_prize { margin-right: 0; }
   .prize .award { margin-bottom: 5px; } }
 @media only screen and (max-width: 400px) { .actor_l { width: 100px !important; } }
+@media only screen and (max-width: 750px) { .pagination { margin: 15px 0 30px; } }
+
+@media only screen and (max-width: 480px) { .reply { padding-top: 10px; } }
+@media only screen and (max-width: 480px) { .reply .text_1 { font-size: 24px; } }
+@media only screen and (max-width: 480px) { .reply .text_2 { font-size: 16px; margin-bottom: 15px; } }
+
 .clear { clear: both; display: table; height: 0; }
 
 .awards { width: 445px; }
@@ -538,14 +566,16 @@ li:hover .icon_sport, .active .icon_sport { background: url('../images/icons-s34
   .prize .awards .award { width: 50%; max-width: 50%; margin: 10px 0 10px; display: block; float: left; } }
 @media only screen and (max-width: 405px) { .prize .awards .award { width: 100%; max-width: 100%; } }
 
-@media only screen and (max-width: 700px) { .prize { padding: 30px; } }
+@media only screen and (max-width: 500px) { .all_awards { margin-top: 0; } }
+
+@media only screen and (max-width: 700px) { .prize { border-bottom: none; padding: 30px; } }
 
 @media only screen and (max-width: 700px) { .more_prize { float: right; width: 50%; transform: translate(0, -80px); } }
 @media only screen and (max-width: 480px) { .more_prize { width: 28%; transform: translate(0, 0px); margin-right: 40px; float: none; width: 100%; padding-left: 0; margin-left: 0; } }
 
-@media only screen and (max-width: 425px) { .slider_nav > span { padding: 0 50px; } }
-@media only screen and (max-width: 360px) { .slider_nav > span { font-size: 22px; } }
-@media only screen and (max-width: 340px) { .slider_nav > span { font-size: 19px; } }
+@media only screen and (max-width: 425px) { .slider_nav > span { padding: 0 50px; font-size: 22px; } }
+@media only screen and (max-width: 380px) { .slider_nav > span { font-size: 19px; } }
+@media only screen and (max-width: 350px) { .slider_nav > span { font-size: 16px; } }
 
 @media only screen and (max-width: 615px) { #container { padding-bottom: 220px; } }
 
