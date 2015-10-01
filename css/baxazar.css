@@ -118,7 +118,7 @@
 body { min-width: 300px; }
 @media only screen and (max-width: 768px) { body { background: #FFF; } }
 
-.bottom_30 { margin-bottom: 30px; }
+.margin_30 { margin-bottom: 30px; margin-top: 30px; }
 
 @media only screen and (max-width: 427px) { .category_slider_inner li.double_slide > a, .category_slider_item.double_slide > a, .category_slider_inner li.double_slide .thumb, .category_slider_item.double_slide .thumb { width: 90vw; }
   .category_slider_inner li.double_slide, .category_slider_item.double_slide { width: 100vw; }
