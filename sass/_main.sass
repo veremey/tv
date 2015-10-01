@@ -5,7 +5,8 @@ body
 	min-width: 300px
 	+r(768)
 		background: #FFF
-
+.bottom_30
+	margin-bottom: 30px
 
 
 // slider
@@ -21,9 +22,6 @@ body
 
 	.category_slider .slider_nav
 		padding: 0
-
-
-
 .category_slider_inner li.double_slide .thumb img, .category_slider_item.double_slide .thumb img
 	+r(500)
 		width: 94vw
@@ -882,14 +880,16 @@ body
 // 		margin-bottom: 25px
 
 
+.actor_title
+	+r(480)
+		h1
+			font-size: 24px
+		p
+			font-size: 18px
+
 .actor
 	.award
 		width: 100%
-
-
-
-
-
 
 
 
@@ -1003,12 +1003,17 @@ body
 .reply_body
 	+r(480)
 		padding-top: 15px
+.reply
+	+r(580)
+		+clr
 .reply.mini
-	+r(480)
+	+r(580)
 		margin: 0px 0 30px 0px
 		padding: 19px
 .reply .stars
 	margin-bottom: 10px
+	+r(580)
+		float: left
 .reply textarea
 	+r(480)
 		font-size: 16px
@@ -1026,6 +1031,12 @@ body
 .pagination
 	+r(480)
 		font-size: 16px
+.actor_descr
+	+r(480)
+		h3
+			font-weight: normal
+		p
+			font-size: 16px
 
 .slider_large li
 	overflow: hidden
@@ -1513,7 +1524,7 @@ body
 		font-weight: 400
 	.actor_r
 		.more_prize
-			margin-top: 5px
+			// margin-top: 5px
 			+r(400)
 				margin-left: 0
 				padding-left: 0
@@ -1557,8 +1568,20 @@ body
 				span
 					+scale(.8)
 
-
-
+.actor_info
+	+r(480)
+		div > span
+			font-size: 14px
+			width: 115px
+		div > p
+			font-size: 14px
+			margin-left: 115px
+.award_title
+	+r(480)
+		font-size: 18px
+.award_info
+	+r(480)
+		font-size: 16px
 
 // ####################################################################################################################################################################################################################################################
 
@@ -1674,7 +1697,7 @@ body
 	+r(700)
 		float: right
 		width: 50%
-		transform: translate(0, -80px)
+		transform: translate(0, -85px)
 	+r(480)
 		width: 28%
 		transform: translate(0, 0px)
@@ -1683,6 +1706,7 @@ body
 		width: 100%
 		padding-left: 0
 		margin-left: 0
+		margin-top: 5px
 
 
 

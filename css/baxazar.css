@@ -118,6 +118,8 @@
 body { min-width: 300px; }
 @media only screen and (max-width: 768px) { body { background: #FFF; } }
 
+.bottom_30 { margin-bottom: 30px; }
+
 @media only screen and (max-width: 427px) { .category_slider_inner li.double_slide > a, .category_slider_item.double_slide > a, .category_slider_inner li.double_slide .thumb, .category_slider_item.double_slide .thumb { width: 90vw; }
   .category_slider_inner li.double_slide, .category_slider_item.double_slide { width: 100vw; }
   .category_slider .slider_nav { padding: 0; } }
@@ -354,6 +356,9 @@ li:hover .icon_sport, .active .icon_sport { background: url('../images/icons-s34
   .reply_body .author { margin-left: 20px; }
   .category_tabs span { margin: 0 6px; }
   .video_info span { font-size: 16px; } }
+@media only screen and (max-width: 480px) { .actor_title h1 { font-size: 24px; }
+  .actor_title p { font-size: 18px; } }
+
 .actor .award { width: 100%; }
 .actor .category_slider .slider_nav { padding: 0; }
 .actor .slider_nav > span:before { background: url('../images/icons-s347979e0b8.png') 0 -130px no-repeat; width: 98px; height: 2px; right: -115px; }
@@ -395,9 +400,13 @@ li:hover .icon_sport, .active .icon_sport { background: url('../images/icons-s34
 
 @media only screen and (max-width: 480px) { .reply_body { padding-top: 15px; } }
 
-@media only screen and (max-width: 480px) { .reply.mini { margin: 0px 0 30px 0px; padding: 19px; } }
+@media only screen and (max-width: 580px) { .reply { *zoom: 1; }
+  .reply:after { content: " "; display: table; clear: both; } }
+
+@media only screen and (max-width: 580px) { .reply.mini { margin: 0px 0 30px 0px; padding: 19px; } }
 
 .reply .stars { margin-bottom: 10px; }
+@media only screen and (max-width: 580px) { .reply .stars { float: left; } }
 
 @media only screen and (max-width: 480px) { .reply textarea { font-size: 16px; } }
 
@@ -408,6 +417,9 @@ li:hover .icon_sport, .active .icon_sport { background: url('../images/icons-s34
 @media only screen and (max-width: 350px) { .reply input[type="submit"] { float: none; margin: 0 auto; } }
 
 @media only screen and (max-width: 480px) { .pagination { font-size: 16px; } }
+
+@media only screen and (max-width: 480px) { .actor_descr h3 { font-weight: normal; }
+  .actor_descr p { font-size: 16px; } }
 
 .slider_large li { overflow: hidden; }
 
@@ -533,8 +545,7 @@ li:hover .icon_sport, .active .icon_sport { background: url('../images/icons-s34
   .actor_info { margin-left: 175px; } }
 @media only screen and (max-width: 580px) and (max-width: 400px) { .actor_info { margin-left: 115px; } }
 
-@media only screen and (max-width: 580px) { .prize_title { font-size: 18px; font-weight: 400; }
-  .actor_r .more_prize { margin-top: 5px; } }
+@media only screen and (max-width: 580px) { .prize_title { font-size: 18px; font-weight: 400; } }
 @media only screen and (max-width: 580px) and (max-width: 400px) { .actor_r .more_prize { margin-left: 0; padding-left: 0; } }
 
 @media only screen and (max-width: 480px) { .more_prize:before { content: none; } }
@@ -546,6 +557,13 @@ li:hover .icon_sport, .active .icon_sport { background: url('../images/icons-s34
   .actor_rating .down span { margin: 5px 0 0; -ms-transform: scale(0.7); -webkit-transform: scale(0.7); transform: scale(0.7); }
   .actor_rating .down:hover { border-color: #CE4848; line-height: 33px; height: 30px; width: 40px; font-size: 13px; padding: 0 6px 0 0; }
   .actor_rating .down:hover span { -ms-transform: scale(0.8); -webkit-transform: scale(0.8); transform: scale(0.8); } }
+
+@media only screen and (max-width: 480px) { .actor_info div > span { font-size: 14px; width: 115px; }
+  .actor_info div > p { font-size: 14px; margin-left: 115px; } }
+
+@media only screen and (max-width: 480px) { .award_title { font-size: 18px; } }
+
+@media only screen and (max-width: 480px) { .award_info { font-size: 16px; } }
 
 @media only screen and (max-width: 900px) { .actor_r { margin-left: 0; }
   .actor_l { margin: 0 15px 15px 0; } }
@@ -577,8 +595,8 @@ li:hover .icon_sport, .active .icon_sport { background: url('../images/icons-s34
 
 @media only screen and (max-width: 700px) { .prize { border-bottom: none; padding: 30px; } }
 
-@media only screen and (max-width: 700px) { .more_prize { float: right; width: 50%; transform: translate(0, -80px); } }
-@media only screen and (max-width: 480px) { .more_prize { width: 28%; transform: translate(0, 0px); margin-right: 40px; float: none; width: 100%; padding-left: 0; margin-left: 0; } }
+@media only screen and (max-width: 700px) { .more_prize { float: right; width: 50%; transform: translate(0, -85px); } }
+@media only screen and (max-width: 480px) { .more_prize { width: 28%; transform: translate(0, 0px); margin-right: 40px; float: none; width: 100%; padding-left: 0; margin-left: 0; margin-top: 5px; } }
 
 @media only screen and (max-width: 425px) { .slider_nav > span { padding: 0 50px; font-size: 22px; } }
 @media only screen and (max-width: 380px) { .slider_nav > span { font-size: 19px; } }
