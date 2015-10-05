@@ -120,6 +120,8 @@ body { min-width: 300px; }
 
 .margin_30 { margin-bottom: 30px; margin-top: 30px; }
 
+.category_slider_inner li.double_slide .thumb img, .category_slider_item.double_slide .thumb img { max-width: 100%; }
+
 @media only screen and (max-width: 427px) { .category_slider_inner li.double_slide > a, .category_slider_item.double_slide > a, .category_slider_inner li.double_slide .thumb, .category_slider_item.double_slide .thumb { width: 90vw; }
   .category_slider_inner li.double_slide, .category_slider_item.double_slide { width: 100vw; }
   .category_slider .slider_nav { padding: 0; } }
@@ -160,6 +162,7 @@ body { min-width: 300px; }
 .film_title .sort_tags { vertical-align: middle; }
 @media only screen and (max-width: 655px) { .film_title .sort_tags { margin: 15px 0 0; } }
 @media only screen and (max-width: 585px) { .film_title .sort_tags { width: 100%; } }
+@media only screen and (max-width: 480px) { .film_title .sort_tags { font-size: 16px; } }
 
 @media only screen and (max-width: 500px) { .extended_search form { margin-bottom: 20px; background-color: #FFF; } }
 
@@ -356,8 +359,8 @@ li:hover .icon_sport, .active .icon_sport { background: url('../images/icons-s34
   .reply_body .author { margin-left: 20px; }
   .category_tabs span { margin: 0 6px; }
   .video_info span { font-size: 16px; } }
-@media only screen and (max-width: 480px) { .actor_title h1 { font-size: 24px; }
-  .actor_title p { font-size: 18px; } }
+@media only screen and (max-width: 480px) { .actor_title h1, .film_title h1 { font-size: 24px; }
+  .actor_title p, .film_title p { font-size: 18px; } }
 
 .actor .award { width: 100%; }
 .actor .category_slider .slider_nav { padding: 0; }
@@ -416,7 +419,7 @@ li:hover .icon_sport, .active .icon_sport { background: url('../images/icons-s34
 
 @media only screen and (max-width: 350px) { .reply input[type="submit"] { float: none; margin: 0 auto; } }
 
-@media only screen and (max-width: 480px) { .pagination { font-size: 16px; } }
+@media only screen and (max-width: 480px) { .pagination a { font-size: 16px; } }
 
 @media only screen and (max-width: 480px) { .actor_descr h3 { font-weight: normal; }
   .actor_descr p { font-size: 16px; } }
@@ -515,11 +518,11 @@ li:hover .icon_sport, .active .icon_sport { background: url('../images/icons-s34
 
 @media only screen and (max-width: 1310px) { .topic span:before { background: url('../images/icons-s347979e0b8.png') 0 -118px no-repeat; width: 98px; height: 2px; }
   .topic span:after { background: url('../images/icons-s347979e0b8.png') 0 -130px no-repeat; width: 98px; height: 2px; } }
-@media only screen and (max-width: 600px) { .topic span:before { left: -140px; }
+@media only screen and (max-width: 500px) { .topic span:before { left: -140px; }
   .topic span:after { right: -140px; }
   .categories-c, .sort-by { display: none; }
-  .content-c { margin-left: 0; }
-  .items .item-c { width: 48%; }
+  .content-c { margin-left: 0; } }
+@media only screen and (max-width: 600px) { .items .item-c { width: 48%; }
   .items .item-c:nth-child(odd) { margin-left: 0px; }
   .items .item-c:nth-child(even) { margin-left: 3%; }
   .items .item-c .pic { width: 100%; }
@@ -558,12 +561,15 @@ li:hover .icon_sport, .active .icon_sport { background: url('../images/icons-s34
   .actor_rating .down:hover { border-color: #CE4848; line-height: 33px; height: 30px; width: 40px; font-size: 13px; padding: 0 6px 0 0; }
   .actor_rating .down:hover span { -ms-transform: scale(0.8); -webkit-transform: scale(0.8); transform: scale(0.8); } }
 
-@media only screen and (max-width: 480px) { .actor_info div > span { font-size: 14px; width: 115px; }
+@media only screen and (max-width: 600px) { .actor_info div > span { font-size: 14px; width: 115px; }
   .actor_info div > p { font-size: 14px; margin-left: 115px; } }
 
 @media only screen and (max-width: 480px) { .award_title { font-size: 18px; } }
 
 @media only screen and (max-width: 480px) { .award_info { font-size: 16px; } }
+
+@media only screen and (max-width: 600px) { #error { margin: 16% auto 20px; }
+  #error a { font-size: 16px; } }
 
 @media only screen and (max-width: 900px) { .actor_r { margin-left: 0; }
   .actor_l { margin: 0 15px 15px 0; } }
@@ -571,7 +577,7 @@ li:hover .icon_sport, .active .icon_sport { background: url('../images/icons-s34
 @media only screen and (max-width: 900px) { .prize_title { vertical-align: middle; display: inline-block; margin-bottom: 0; }
   .more_prize { transform: translate(0, 0); } }
 @media only screen and (max-width: 700px) { .prize_title { vertical-align: top; float: left; width: 100%; margin: 0; } }
-@media only screen and (max-width: 350px) { .more_prize { margin-right: 0; }
+@media only screen and (max-width: 350px) { .more_prize { margin-right: 0; font-size: 14px; }
   .prize .award { margin-bottom: 5px; } }
 @media only screen and (max-width: 400px) { .actor_l { width: 100px !important; } }
 @media only screen and (max-width: 750px) { .pagination { margin: 15px 0 30px; } }
@@ -591,12 +597,18 @@ li:hover .icon_sport, .active .icon_sport { background: url('../images/icons-s34
   .prize .awards .award { width: 50%; max-width: 50%; margin: 10px 0 10px; display: block; float: left; } }
 @media only screen and (max-width: 405px) { .prize .awards .award { width: 100%; max-width: 100%; } }
 
-@media only screen and (max-width: 500px) { .all_awards { margin-top: 0; } }
+@media only screen and (max-width: 600px) { .all_awards { margin-top: 0; } }
+
+.content-c .show480 { display: none !important; }
+@media only screen and (max-width: 500px) { .content-c .show480 { display: block !important; margin-bottom: 25px; } }
 
 @media only screen and (max-width: 700px) { .prize { border-bottom: none; padding: 30px; } }
 
 @media only screen and (max-width: 700px) { .more_prize { float: right; width: 50%; transform: translate(0, -85px); } }
-@media only screen and (max-width: 480px) { .more_prize { width: 28%; transform: translate(0, 0px); margin-right: 40px; float: none; width: 100%; padding-left: 0; margin-left: 0; margin-top: 5px; } }
+@media only screen and (max-width: 480px) { .more_prize { width: 28%; transform: translate(0, 0px); margin-right: 40px; float: none; width: 100%; padding-left: 0; margin-left: 0; margin-top: 5px; font-size: 14px; } }
+
+@media only screen and (max-width: 700px) { .film_prize .more_prize { transform: translate(0, -100px); } }
+@media only screen and (max-width: 480px) { .film_prize .more_prize { transform: translate(0, 0px); } }
 
 @media only screen and (max-width: 425px) { .slider_nav > span { padding: 0 50px; font-size: 22px; } }
 @media only screen and (max-width: 380px) { .slider_nav > span { font-size: 19px; } }
@@ -638,11 +650,13 @@ li:hover .icon_sport, .active .icon_sport { background: url('../images/icons-s34
 @media only screen and (max-width: 585px) { .film_rating { overflow: visible; }
   .film_rating .stars { padding-top: 4px; height: 54px; }
   .film_rating .stars .descr { font-size: 16px; } }
-@media only screen and (max-width: 480px) { .film_rating .stars { width: 33%; height: 57px; border-bottom: 2px solid #1e3450; border-top: 2px solid #1e3450; }
+@media only screen and (max-width: 480px) { .film_rating .stars { position: relative; width: 30%; height: 57px; border-bottom: 2px solid #1e3450; border-top: 2px solid #1e3450; }
+  .film_rating .stars:before { content: ""; position: absolute; top: 27px; right: 5px; width: 0px; height: 0px; border-style: solid; border-width: 5px 4px 0 4px; border-color: #000 transparent transparent transparent; }
   .film_rating .stars:after { top: -2px; right: -20px; background: url('../images/icons-s347979e0b8.png') 0 -1116px no-repeat; width: 22px; height: 64px; }
   .film_rating .stars .star { display: none; }
   .film_rating .stars .descr { line-height: 52px; }
   .film_rating .result { height: 64px; line-height: 64px; } }
+@media only screen and (max-width: 440px) { .film_rating .stars:before { z-index: 3; right: -8px; top: 28px; } }
 @media only screen and (max-width: 350px) { .film_rating .stars { width: 27%; }
   .film_rating .stars .descr { font-size: 14px; } }
 
@@ -684,13 +698,18 @@ li:hover .icon_sport, .active .icon_sport { background: url('../images/icons-s34
 @media only screen and (max-width: 605px) { .rank { width: 18%; min-width: 69px; }
   .rank i { left: 9px; } }
 @media only screen and (max-width: 585px) { .rank i { left: 22px; } }
-@media only screen and (max-width: 480px) { .rank { width: 23%; border: 2px solid #1e3450; border-left: none; height: 61px; }
-  .rank i { left: 13px; } }
+@media only screen and (max-width: 480px) { .rank { width: 28%; border: 2px solid #1e3450; border-left: none; height: 61px; }
+  .rank i { left: 13px; top: 16px; }
+  .rank span { padding-top: 10px; margin-right: 10px; float: right; } }
+@media only screen and (max-width: 440px) { .rank { width: 22%; }
+  .rank i { left: 17px; top: 5px; }
+  .rank span { padding-top: 25px; margin-right: 30px; } }
 @media only screen and (max-width: 350px) { .rank { width: 21%; }
   .rank i { left: 8px; } }
 
 @media only screen and (max-width: 905px) { .film_nav { margin-bottom: 15px; } }
-@media only screen and (max-width: 480px) { .film_nav { width: 100%; } }
+@media only screen and (max-width: 480px) { .film_nav { width: 100%; }
+  .film_nav a { font-size: 16px; } }
 @media only screen and (max-width: 400px) { .film_nav a { width: 50%; }
   .film_nav > a + a { border-left: none; } }
 
@@ -707,14 +726,22 @@ li:hover .icon_sport, .active .icon_sport { background: url('../images/icons-s34
 @media only screen and (max-width: 905px) and (max-width: 580px) { .film_about_details:after { display: none; } }
 @media only screen and (max-width: 905px) and (max-width: 768px) { .film_about_details:after { bottom: 8px; } }
 
+@media only screen and (max-width: 480px) { .film_about_details { font-size: 18px; padding: 10px 15px; border-bottom: none; text-decoration: none; } }
+
 .film_about_details.is_active { background-color: #D9EAF8; }
 
 .film_about_details.is_active::after { -ms-transform: rotate(180deg); -webkit-transform: rotate(180deg); transform: rotate(180deg); left: 90%; }
 @media only screen and (max-width: 585px) { .film_about_details.is_active::after { left: 17%; } }
 
 @media only screen and (max-width: 1030px) { .film_info { width: 440px; margin-bottom: 30px; } }
-@media only screen and (max-width: 768px) { .film_info { background-color: #D9EAF8; width: 67%; padding: 10px; float: right; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; } }
+@media only screen and (max-width: 768px) { .film_info { background-color: #DCECFB; width: 67%; padding: 10px; float: right; background-image: url("../images/filmBG.jpg"); background-position: center; background-repeat: no-repeat; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; } }
 @media only screen and (max-width: 585px) { .film_info { width: 100%; } }
+
+@media only screen and (max-width: 480px) { .film_info div > span, .film_info div > p { font-size: 16px; } }
+
+@media only screen and (max-width: 480px) { .film_info div > span { width: 160px; line-height: 1.3; } }
+
+@media only screen and (max-width: 480px) { .film_info div > p { margin-left: 160px; line-height: 1.3; } }
 
 @media only screen and (max-width: 905px) { .bird__bottom { background: url('../images/icons-s347979e0b8.png') 0 0 no-repeat; width: 5px; height: 3px; } }
 
