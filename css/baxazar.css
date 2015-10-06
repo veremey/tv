@@ -268,6 +268,7 @@ body { min-width: 300px; }
 
 .menu__pad_6 { text-align: center !important; }
 @media only screen and (max-width: 500px) { .menu__pad_6 { width: 22%; } }
+@media only screen and (max-width: 768px) { .menu__pad_6 { display: block !important; } }
 
 .icon_kino { background: url('../images/icons-s347979e0b8.png') 0 -142px no-repeat; width: 24px; height: 34px; }
 li:hover .icon_kino, .active .icon_kino { background: url('../images/icons-s347979e0b8.png') 0 -268px no-repeat; width: 24px; height: 34px; }
@@ -393,12 +394,12 @@ li:hover .icon_sport, .active .icon_sport { background: url('../images/icons-s34
 .actor .category_tabs span { margin: 0 6px; }
 .actor .video_info span { font-size: 16px; }
 
-@media only screen and (max-width: 480px) { .comment .comment_text, .comment .comment_bottom, .comment .add_comment { font-size: 16px; } }
+@media only screen and (max-width: 600px) { .comment .comment_text, .comment .comment_bottom, .comment .add_comment { font-size: 16px; } }
 
-@media only screen and (max-width: 480px) { .comment .comment_more { font-size: 16px; } }
+@media only screen and (max-width: 600px) { .comment .comment_more { font-size: 16px; } }
 @media only screen and (max-width: 405px) { .comment .comment_more { display: block; margin-left: 0; margin-top: 10px; } }
 
-@media only screen and (max-width: 480px) { .comment .comment_top { font-size: 17px; }
+@media only screen and (max-width: 600px) { .comment .comment_top { font-size: 17px; }
   .comment .comment_top span { font-size: 18px; } }
 
 @media only screen and (max-width: 480px) { .reply_body { padding-top: 15px; } }
@@ -411,18 +412,20 @@ li:hover .icon_sport, .active .icon_sport { background: url('../images/icons-s34
 .reply .stars { margin-bottom: 10px; }
 @media only screen and (max-width: 580px) { .reply .stars { float: left; } }
 
-@media only screen and (max-width: 480px) { .reply textarea { font-size: 16px; } }
+@media only screen and (max-width: 600px) { .reply textarea { font-size: 16px; } }
 
-@media only screen and (max-width: 480px) { .reply .stars .star { width: 24px; -ms-transform: scale(1.2); -webkit-transform: scale(1.2); transform: scale(1.2); } }
+@media only screen and (max-width: 600px) { .reply .stars .star { width: 24px; -ms-transform: scale(1.2); -webkit-transform: scale(1.2); transform: scale(1.2); } }
 
-@media only screen and (max-width: 480px) { .reply .descr { font-size: 16px; } }
+@media only screen and (max-width: 600px) { .reply .descr { font-size: 16px; } }
 
 @media only screen and (max-width: 350px) { .reply input[type="submit"] { float: none; margin: 0 auto; } }
 
-@media only screen and (max-width: 480px) { .pagination a { font-size: 16px; } }
+@media only screen and (max-width: 600px) { .pagination a { font-size: 16px; } }
 
-@media only screen and (max-width: 480px) { .actor_descr h3 { font-weight: normal; }
+@media only screen and (max-width: 600px) { .actor_descr h3 { font-weight: normal; }
   .actor_descr p { font-size: 16px; } }
+
+@media only screen and (max-width: 600px) { .footer_bottom_propos_link { line-height: 22px !important; } }
 
 .slider_large li { overflow: hidden; }
 
@@ -564,9 +567,9 @@ li:hover .icon_sport, .active .icon_sport { background: url('../images/icons-s34
 @media only screen and (max-width: 600px) { .actor_info div > span { font-size: 14px; width: 115px; }
   .actor_info div > p { font-size: 14px; margin-left: 115px; } }
 
-@media only screen and (max-width: 480px) { .award_title { font-size: 18px; } }
+@media only screen and (max-width: 600px) { .award_title { font-size: 18px; } }
 
-@media only screen and (max-width: 480px) { .award_info { font-size: 16px; } }
+@media only screen and (max-width: 600px) { .award_info { font-size: 16px; } }
 
 @media only screen and (max-width: 600px) { #error { margin: 16% auto 20px; }
   #error a { font-size: 16px; } }
@@ -597,7 +600,9 @@ li:hover .icon_sport, .active .icon_sport { background: url('../images/icons-s34
   .prize .awards .award { width: 50%; max-width: 50%; margin: 10px 0 10px; display: block; float: left; } }
 @media only screen and (max-width: 405px) { .prize .awards .award { width: 100%; max-width: 100%; } }
 
-@media only screen and (max-width: 600px) { .all_awards { margin-top: 0; } }
+@media only screen and (max-width: 600px) { .all_awards { margin-top: 0; }
+  .all_awards .award { max-width: 190px; } }
+@media only screen and (max-width: 480px) { .all_awards .award { max-width: 90%; } }
 
 .content-c .show480 { display: none !important; }
 @media only screen and (max-width: 500px) { .content-c .show480 { display: block !important; margin-bottom: 25px; } }
@@ -610,6 +615,7 @@ li:hover .icon_sport, .active .icon_sport { background: url('../images/icons-s34
 @media only screen and (max-width: 700px) { .film_prize .more_prize { transform: translate(0, -100px); } }
 @media only screen and (max-width: 480px) { .film_prize .more_prize { transform: translate(0, 0px); } }
 
+@media only screen and (max-width: 600px) { .slider_nav > span { font-size: 18px; } }
 @media only screen and (max-width: 425px) { .slider_nav > span { padding: 0 50px; font-size: 22px; } }
 @media only screen and (max-width: 380px) { .slider_nav > span { font-size: 19px; } }
 @media only screen and (max-width: 350px) { .slider_nav > span { font-size: 16px; } }

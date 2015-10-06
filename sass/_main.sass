@@ -577,6 +577,8 @@ body
 	text-align: center!important
 	+r(500)
 		width: 22%
+	+r(768)
+		display: block !important
 	// +iphone5
 	// 	width: 22%
 
@@ -990,18 +992,18 @@ body
 .comment .comment_text,
 .comment .comment_bottom,
 .comment .add_comment
-	+r(480)
+	+r(600)
 		font-size: 16px
 
 .comment .comment_more
-	+r(480)
+	+r(600)
 		font-size: 16px
 	+r(405)
 		display: block
 		margin-left: 0
 		margin-top: 10px
 .comment .comment_top
-	+r(480)
+	+r(600)
 		font-size: 17px
 		span
 			font-size: 18px
@@ -1020,14 +1022,14 @@ body
 	+r(580)
 		float: left
 .reply textarea
-	+r(480)
+	+r(600)
 		font-size: 16px
 .reply .stars .star
-	+r(480)
+	+r(600)
 		width: 24px
 		+scale(1.2)
 .reply .descr
-	+r(480)
+	+r(600)
 		font-size: 16px
 .reply input[type="submit"]
 	+r(350)
@@ -1035,14 +1037,18 @@ body
 		margin: 0 auto
 .pagination
 	a
-		+r(480)
+		+r(600)
 			font-size: 16px
 .actor_descr
-	+r(480)
+	+r(600)
 		h3
 			font-weight: normal
 		p
 			font-size: 16px
+
+.footer_bottom_propos_link
+	+r(600)
+		line-height: 22px!important
 
 .slider_large li
 	overflow: hidden
@@ -1584,10 +1590,10 @@ body
 			font-size: 14px
 			margin-left: 115px
 .award_title
-	+r(480)
+	+r(600)
 		font-size: 18px
 .award_info
-	+r(480)
+	+r(600)
 		font-size: 16px
 
 // ####################################################################################################################################################################################################################################################
@@ -1701,6 +1707,11 @@ body
 .all_awards
 	+r(600)
 		margin-top: 0
+		.award
+			max-width: 190px
+	+r(480)
+		.award
+			max-width: 90%
 .content-c  .show480
 	display: none!important
 	+r(500)
@@ -1735,6 +1746,8 @@ body
 
 
 .slider_nav > span
+	+r(600)
+		font-size: 18px
 	+r(425)
 		padding: 0 50px
 		font-size: 22px
