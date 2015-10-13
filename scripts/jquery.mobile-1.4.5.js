@@ -8187,7 +8187,7 @@ $.widget( "mobile.button", {
 			( options.inline ? " ui-btn-inline" : "" ) +
 			( options.mini ? " ui-mini" : "" ) +
 			( options.disabled ? " ui-state-disabled" : "" ) +
-			( iconClasses ? ( " " + iconClasses ) : "")/* +
+			( iconClasses ? ( " " + iconClasses ) : ""))/* +
 			"' >" + this.element.val() + "</div>" )*/;
 	},
 
