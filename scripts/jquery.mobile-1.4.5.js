@@ -8191,6 +8191,7 @@ $.widget( "mobile.button", {
 			"' >" + this.element.val() + "</div>" )*/;
 	},
 
+
 	widget: function() {
 		return this.wrapper;
 	},
